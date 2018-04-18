@@ -1,0 +1,44 @@
+#----------------------------------------------------------------------
+#
+#  Command file for batchprocess utility
+#
+#  This command file was originally copied from $(MS_DATA)cmdfiletemplate.txt.
+#  Command file information:
+#       - Lines that start with the '#' character are treated as comments and ignored.
+#
+#      remove the # below depending on selection set
+#----------------------------------------------------------------------
+print attributes constructions off
+print attributes dimensions on
+print attributes datafields off
+print attributes displayset off
+print attributes fast cells off
+print attributes fast curves off
+print attributes fill on
+print attributes linestyles on
+print attributes lineweights on
+print attributes patterns on
+print attributes points on
+print attributes tags on
+print attributes text on
+print attributes textnodes off
+print attributes transparency off
+print attributes brokenassocsymb off
+print attributes applyrastercolormode on
+print attributes viewbgcolorrender off
+print attributes plotborder off
+print attributes fenceboundary off
+
+#print pentable attach C:\ProgramData\CAD Build v8.0 WORKSPACE\BHPBIO Shared Resources\plotdriver\BHPBIO_PDF.tbl
+print pentable attach A:\509_PE_Drafting_Group\CAD_Tools\plotdrv\bhp Colour A3.tbl
+
+print boundary fit all
+print rasterized off
+print colormode color
+print printername IORHED-PRN01
+print orientation landscape
+print papername A3 (297 x 420mm)
+print autocenter on
+print maximize
+
+print execute

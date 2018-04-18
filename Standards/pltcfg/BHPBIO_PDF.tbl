@@ -1,0 +1,128 @@
+#     C:\ProgramData\CAD Build v8.0 WORKSPACE\BHPBIO Shared Resources\plotdriver\BHPBIO_PDF_Thicker_Edit.tbl
+
+BEGIN_GLOBAL
+    VERSION = 890
+    PLOTTING
+    VIEWS = 1-8
+    SYMBOLOGY = AsStored
+    EXPLODE_SHARED_CELLS = 0
+    EXPLODE_DIMENSIONS = 0
+    EXPLODE_MULTILINES = 0
+    EXPLODE_TAGS = 1
+    MATCH_MULTIPLE_SECTIONS = 0
+    PST_COMPATIBLE_MODE = 0
+    SORT_EXPORTED_GRAPHICS = 0
+END_GLOBAL
+
+BEGIN green_text
+    IN_DISABLESECTION = 1
+    IN_COLOR      = 2
+    TYPE          = 7,17
+    OUT_COLOR     = 0
+END
+
+BEGIN scalebar
+    IN_LEVEL      = G-GENERAL CELLS
+    TYPE          = 2-4,6,7,11,12,14-19,23,24,27,33,35,36,87
+    OUT_COLOR     = 0
+END
+
+BEGIN watermark_cell
+    IN_LEVEL      = G-Project Cells
+    TYPE          = 2-4,6,7,11,12,14-19,23,24,27,33,35,36,87
+    OUT_COLOR     = 0
+END
+
+BEGIN BorderData
+    IN_LEVEL      = G-Border Data
+    IN_COLOR      = 6
+    TYPE          = 2-4,6,7,11,12,14-19,22-24,27,33,35-37,87
+    OUT_COLOR     = 0
+END
+
+BEGIN Border5and6
+    IN_WEIGHT     = 5,6
+    IN_LEVEL      = G-Border
+    TYPE          = 2-4,6,7,11,12,14-19,22-24,27,33,35-37,87
+    OUT_WEIGHT    = 4
+END
+
+BEGIN text0
+    IN_WEIGHT     = 0
+    IN_LEVEL      = G-Border
+    IN_LEVEL      = G-Border Data
+    IN_LEVEL      = G-Symbols
+    TYPE          = 7,17
+    OUT_COLOR     = 0
+END
+
+BEGIN text1
+    IN_WEIGHT     = 1
+    IN_LEVEL      = G-Border
+    IN_LEVEL      = G-Border Data
+    IN_LEVEL      = G-Symbols
+    TYPE          = 7,17
+    OUT_COLOR     = 0
+END
+
+BEGIN text2
+    IN_WEIGHT     = 2
+    IN_LEVEL      = G-Border
+    IN_LEVEL      = G-Border Data
+    IN_LEVEL      = G-Symbols
+    TYPE          = 7,17
+    OUT_COLOR     = 0
+END
+
+BEGIN text3
+    IN_WEIGHT     = 3
+    IN_LEVEL      = G-Border
+    IN_LEVEL      = G-Border Data
+    IN_LEVEL      = G-Symbols
+    TYPE          = 7,17
+    OUT_COLOR     = 0
+END
+
+BEGIN text4
+    IN_WEIGHT     = 4
+    IN_LEVEL      = G-Border
+    IN_LEVEL      = G-Border Data
+    IN_LEVEL      = G-Symbols
+    TYPE          = 7,17
+    OUT_COLOR     = 0
+END
+
+BEGIN_WEIGHTMAP
+      0 = 4 0.18
+      1 = 4 0.25
+      2 = 4 0.35
+      3 = 4 0.5
+      4 = 4 0.75
+      5 = 4 1
+      6 = 4 1.125
+      7 = 4 1.25
+      8 = 4 1.375
+      9 = 4 1.45
+     10 = 4 1.5
+     11 = 4 1.625
+     12 = 4 1.75
+     13 = 4 1.875
+     14 = 4 2
+     15 = 4 2.125
+     16 = 4 2.25
+     17 = 4 2.375
+     18 = 4 2.5
+     19 = 4 2.625
+     20 = 4 2.75
+     21 = 4 2.875
+     22 = 4 3
+     23 = 4 3.125
+     24 = 4 3.25
+     25 = 4 3.375
+     26 = 4 3.5
+     27 = 4 3.625
+     28 = 4 3.75
+     29 = 4 3.875
+     30 = 4 4
+     31 = 4 4.125
+END_WEIGHTMAP

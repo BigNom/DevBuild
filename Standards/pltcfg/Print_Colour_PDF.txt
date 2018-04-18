@@ -1,0 +1,44 @@
+#----------------------------------------------------------------------
+#
+#  Command file for batchprocess utility
+#
+#  This command file was originally copied from $(MS_DATA)cmdfiletemplate.txt.
+#  Command file information:
+#       - Lines that start with the '#' character are treated as comments and ignored.
+#
+#      remove the # below depending on selection set
+#----------------------------------------------------------------------
+print attributes constructions off
+print attributes dimensions on
+print attributes datafields off
+print attributes displayset off
+print attributes fast cells off
+print attributes fast curves off
+print attributes fill on
+print attributes levelsymbology on
+print attributes linestyles on
+print attributes lineweights on
+print attributes patterns on
+print attributes points on
+print attributes tags on
+print attributes text on
+print attributes textnodes off
+print attributes transparency off
+print attributes brokenassocsymb off
+print attributes applyrastercolormode on
+print attributes viewbgcolorrender off
+print attributes plotborder off
+print attributes fenceboundary off
+
+print driver A:\509_PE_Drafting_Group\CAD_Tools\plotdrv\BHPBIO_PDF_v8i.pltcfg
+#print pentable attach F:\MicroStation\BHP Settings\PEN\bhp colour.tbl
+
+print boundary fit all
+print rasterized off
+print colormode color
+print orientation landscape
+print papername ISO A1
+print autocenter on
+print maximize
+
+print execute

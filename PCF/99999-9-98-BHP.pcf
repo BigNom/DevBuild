@@ -1,0 +1,501 @@
+#----------------------------------------------------------------------
+#
+# BuildingTemplate_AU.pcf - AECOsim Building Designer AU Project Configuration File
+#
+# $Copyright: (c) 2015 Bentley Systems, Incorporated. All rights reserved. $
+#
+#----------------------------------------------------------------------
+
+#======================================================================
+# Project Configuration File
+#======================================================================
+	# Project Description as it will appear in Workspace menu > About Workspace
+		_USTN_PROJECTDESCR 	= BHP Projects
+
+#======================================================================
+# Datasets
+#
+# Note: if you set TF_DATASETNAME here, you must include the Dataset.cfg file.
+#======================================================================
+
+	# Defines Primary Localized Dataset
+		TF_DATASETNAME = Dataset_ANZ
+
+			%if exists ($(TFDIR)Dataset.cfg)
+			% include $(TFDIR)Dataset.cfg
+			%endif
+
+#======================================================================
+# Establish discipline-specific paths and files:
+#======================================================================
+
+	%if ($(BB_DISCIPLINE) == "Architectural")
+		# The following config. variables activates a seed file that includes callouts for
+		# plans, sections and elevations. 
+		# If necessesary, move the callouts to the required location.
+		# Uncomment MS_DESIGNSEED below to assign it as your default design seed:
+
+		# MS_DESIGNSEED 	= $(TFDIR)seed/Design_and_Sheets_Seed.dgn
+	%endif
+
+	%if ($(BB_DISCIPLINE) == "Structural")
+		MS_DESIGNSEED 		= $(TFDIR)seed/DesignSeed_Structural.dgn
+	%endif
+
+	%if ($(BB_DISCIPLINE) == "Electrical")
+		MS_DESIGNSEED 		= $(TFDIR)seed/DesignSeed_Electrical.dgn
+	%endif
+
+#=============================================================================
+# Australian Specific Doors Sizes with Elevation Direction and Windows with
+# Elevation Direction and Structural Sections
+#=============================================================================
+
+		ATFDIR_DOOR	< $(ATFDIR_FRAME)Doors_AU/
+		ATFDIR_WINDOW	< $(ATFDIR_FRAME)Windows_AU/
+		ATFDIR_CASEWORK < $(ATFDIR_FRAME)casework_AU/
+		DG_CATALOGS_PATH	< $(TFDIR)datagroupcatalogs/Doors_AU/
+		DG_CATALOGS_PATH	< $(TFDIR)datagroupcatalogs/Structural_AU/
+
+#======================================================================
+# Establish Project Directories:
+#======================================================================
+	# Establish the location of the project dataset
+	# _USTN_PROJECTDATA	= $(_AERISON_PROJECTS)$(_USTN_PROJECTNAME)/
+		PROJ_DATASET 	= $(_USTN_PROJECTDATA)99_Admin/support/dataset/					# SBiddle 19/02/2018
+	
+	# Establish the location of the project output diectory
+		_USTN_OUT 	= $(_USTN_PROJECTDATA)99_Admin/support/out/
+
+	# MS_DEF: Main Project Entry Point
+		MS_DEF 		= $(_USTN_PROJECTDATA)
+
+	# MS_DESIGNDIR: Design Model Directory (Used by Project Explorer)
+		MS_DESIGNDIR 	= $(_USTN_PROJECTDATA)01_Models/Concrete/
+		
+	# MS_DRAWINGDIR: Create Dynamic View - default destination directory for drawings
+		MS_DRAWINGDIR 	= $(_USTN_PROJECTDATA)02_Drawings/Concrete/
+
+	# MS_SHEETDIR: Create Dynamic View - default destination directory for sheets
+		MS_SHEETDIR 	= $(_USTN_PROJECTDATA)02_Drawings/Concrete/
+		
+	# TF_DRAWINGS: Location of Drawing Extractions (can be over-written in the Drawing Definition).
+		TF_DRAWINGS 	=  $(_USTN_PROJECTDATA)02_Drawings/Concrete/
+
+	# TFDIR_CELL: Prepends or overwrites the folder locations of compound cell libraries
+		TFDIR_CELL 	< $(PROJ_DATASET)cell/
+
+	# ATFDIR_CELL: Prepends or overwrites the folder locations of cell libraries
+		 ATFDIR_CELL	< $(PROJ_DATASET)cell/
+
+	# TFDIR_COMP: Prepends or overwrites the location of Component libraries.
+		TFDIR_COMP 	< $(PROJ_DATASET)comp/
+
+	# TFDIR_CPART: Prepends or overwrites the location of Compound Part libraries.
+		TFDIR_CPART 	< $(PROJ_DATASET)cpart/
+
+	# TFDIR_DATA: Location of miscellaneous data files.  Variable should not be appended or prepended.
+		# TFDIR_DATA 	= $(TFDIR)data/
+
+	# TFDIR_PART: Prepends or overwrites the location of Bentley Building Parts libraries.
+		TFDIR_PART 	< $(PROJ_DATASET)part/
+		
+	# TFDIR_SETTING: Location of misc. settings files, used by Frame Builder, Truss Builder, etc.
+	# Variable should not be appended or prepended.
+		#TFDIR_SETTING	= $(TFDIR)setting/
+		
+	# TFDIR_SEED: Overwrites the default location of Bentley Building model seed files.
+		# TFDIR_SEED	= $(TFDIR)seed/
+		
+	# FRAME DIRECTORIES: Project directory variables for Frame Tools, including Doors, Windows, and Casework
+		PROJDIR_FRAME	= $(PROJ_DATASET)frame/
+		ATFDIR_DOOR 	< $(PROJDIR_FRAME)doors/
+		ATFDIR_WINDOW 	< $(PROJDIR_FRAME)windows/
+		ATFDIR_CASEWORK < $(PROJDIR_FRAME)casework/
+
+#======================================================================
+# Establish Reference Directories:
+#======================================================================
+	MS_RFDIR 		> $(_USTN_PROJECTDATA)01_Models/
+	MS_RFDIR 		> $(MS_DRAWINGDIR)02_Drawings/
+	MS_RFDIR 		> $(TF_DRAWINGS)
+	MS_RFDIR 		> $(MS_SHEETDIR) 
+	MS_RFDIR 		> $(PROJ_DATASET)seed/
+	MS_RFDIR 		> $(PROJ_DATASET)seed/borders/
+
+	MS_MARKUPPATH 		> $(MS_RFDIR)
+
+# ----------------------------------------------------------------------
+# Bentley Building-specific variables that user may wish to set at project level.
+# See comments in BuildingDesigner.cfg for more information about each variable
+# Uncomment and define as necessary
+# Note: These are just some examples, you can add to this list
+# ----------------------------------------------------------------------
+
+	# STRUCTURAL_SHAPES: Specifies the xml file that contains the structural steel shape definitions
+		STRUCTURAL_SHAPES	= AU_Onesteel.xml
+		STRUCTURAL_SHAPES       > AU_Timber.xml
+		STRUCTURAL_SHAPES       > AU_Concrete.xml
+		STRUCTURAL_SHAPES       > AU_Capral.xml
+		STRUCTURAL_SHAPES	< $(PROJ_DATASET)data/ProjectShapes.xml
+
+	# BB_FLOORMASTER_DGN: Sets the name and location of the Project's Floor Manager file
+		BB_FLOORMASTER_DGN 	= $(PROJ_DATASET)dgnlib/BB_FloorMaster.dgnlib
+		
+	# MS_SHEETMODELSEED: Name of file containing seed model for new sheet models
+		MS_SHEETMODELSEED = $(PROJ_DATASET)seed/SheetSeed_ISO.dgn
+
+	# MS_SHEETMODELSEEDNAME: Name of sheet model seed
+		MS_SHEETMODELSEEDNAME = ISO A0 Landscape Side Title
+		
+	# Optional seed model names for new sheet model:
+		# MS_SHEETMODELSEEDNAME = ISO A1 Landscape Side Title
+		# MS_SHEETMODELSEEDNAME = ISO A2 Landscape Side Title
+		# MS_SHEETMODELSEEDNAME = ISO A3 Landscape Side Title
+				
+	# MS_DESIGNSEED: 
+		# MS_DESIGNSEED = DesignSeed.dgn
+	%lock MS_DESIGNSEED
+
+	# MS_DESIGNMODELSEED: Seed file name when creating a new Design Model from Seed.
+		# MS_DESIGNMODELSEED = DesignSeed.dgn
+		
+	# MS_DESIGNMODELSEEDNAME: Name of default model(contained in MS_DESIGNMODELSEED) used when creating a new Design Model from seed.
+		MS_DESIGNMODELSEEDNAME = Design Model 
+		
+	# MS_SEEDFILES	< $(PROJ_DATASET)seed/
+	
+	# MS_DRAWINGMODELSEED: The name of the Drawing model seed file used when a new Drawing model is created from seed
+		MS_DRAWINGMODELSEED = DrawingSeed.dgn
+
+	# MS_DRAWINGMODELSEEDNAME: The name of the model in the Drawing Model Seed file to use as the seed for a new design model
+		MS_DRAWINGMODELSEEDNAME = Drawing Model
+
+	MS_CUSTOMSHEETSIZEDEF	= $(TFDIR_DATA)Sheetsizes.def
+
+#----------------------------------------------------------------------
+# Append Bentley Building to MS Configuration Variables
+#----------------------------------------------------------------------
+	# MS_DEFCTBL: Default color table if the design file has none (enable one only)
+		MS_DEFCTBL : $(TFDIR_DATA)BB_color.tbl
+		
+	# MS_MATERIAL : Prepending the search path for material files
+		MS_MATERIAL	< $(PROJ_DATASET)materials/	
+		MS_DGNLIBLIST	< $(PROJ_DATASET)materials/*.dgnlib
+		
+	# MS_PATTERN: Prepending the search path for material pattern files
+		MS_PATTERN	< $(PROJ_DATASET)materials/pattern/
+		
+	# MS_BUMP: Prepending the search path for material bump map files
+		MS_BUMP		< $(PROJ_DATASET)materials/bump/
+
+	# MS_LIGHTING: Prepending the search path for IES Lighting Files
+		# MS_LIGHTING	< $(BBESDIR)metadata/IES/
+		# MS_LIGHTING	< $(PROJ_DATASET)electricaldatabase/
+
+	# MS_GLOSSARY: Prepends the project dataset location for glossary files      
+		MS_GLOSSARY	< $(PROJ_DATASET)data/*.gls
+
+	# MS_SYMBRSRC: Prepends the project dataset location custom linestyle resource files    
+		MS_SYMBRSRC	> $(PROJ_DATASET)data/*.rsc
+		
+	# MS_CELLLIST: List of cell libraries to include in the cell search path
+		MS_CELLLIST < $(PROJ_DATASET)cell/*.cel
+		
+	# MS_CELLOUT: Specifies the location for all newly created cell libraries
+		MS_CELLOUT	= $(PROJ_DATASET)cell/
+
+#----------------------------------------------------------------------
+# Add search paths to named DGN libraries
+# Do not add all using *.dgnlib to avoid duplicate DrawingSeeds!
+#----------------------------------------------------------------------
+
+	# BB_LEVEL_DGNLIBLIST: Appends the location and the name of the DGN libraries of levels and level filters
+	# comment out those that are not required
+
+		BB_LEVEL_DGNLIBLIST > $(PROJ_DATASET)dgnlib/Levels_*.dgnlib
+		#BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_*.dgnlib		
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Architectural_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Civil_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Electrical_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Equipment_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_FireProtection_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_General_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Interiors_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Landscape_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Mechanical_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Plumbing_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Structural_ANZ.dgnlib
+		BB_LEVEL_DGNLIBLIST > $(TFDIR)dgnlib/Levels_Surveyor_ANZ.dgnlib
+		
+
+	#Specifies the level name formatting to use when level lists are displayed. 
+		MS_LEVEL_DISPLAY_FORMAT = N (D)
+		MS_LEVEL_PICKER_WIDTH 	= 200
+
+	# Sort level list in alphabetical order
+		MS_LEVEL_USE_ASCII_NAME_SORT = 1
+		
+	# MS_CELLSELECTORDIR
+	# MS_LINFILELIST
+	# MS_SETTINGS / MS_SETTINGSDIR / MS_SETTINGSOUTDIR
+	
+	MS_DGNLIBLIST < $(PROJ_DATASET)dgnlib/*.dgnlib
+	MS_DGNLIBLIST > $(TFDIR)dgnlib/*Styles*.dgnlib	
+	MS_DETAILINGSYMBOLS_CELLLIST = $(PROJ_DATASET)dgnlib/DetailingSymbolStyles.dgnlib
+
+#======================================================================
+# Project Explorer:
+#======================================================================
+	# BB_PROJECTEXPLORER_LIBRARY_DIRECTORY: Specifies the location of the Project Explorer Library Folder
+		BB_PROJECTEXPLORER_LIBRARY_DIRECTORY = $(PROJ_DATASET)dgnlib/
+
+	# BB_PROJECTEXPLORER_LIBRARY_FILE: Specifies the dgnlib to be used by the Project Explorer Assistant for tracking file changes.         
+		BB_PROJECTEXPLORER_LIBRARY_FILE = $(BB_PROJECTEXPLORER_LIBRARY_DIRECTORY)MasterProject.dgnlib
+
+	# MS_PROJECTEXPLORER_EXTENSIONS: Specifies the name of the extension library for Project Explorer         
+		MS_PROJECTEXPLORER_EXTENSIONS	= buildingproject.dll
+		
+		_USTN_CAPABILITY > +CAPABILITY_DGNLINK_NONDGN_REGIONLINKS
+
+#======================================================================
+# Datagroup System:
+#======================================================================
+	# DG_SCHEDULES_DIR: Specifies the output folder for files from the Datagroup System
+		DG_SCHEDULES_DIR	= $(_USTN_OUT)schedules/
+		
+	# DG_PATH: Specifies the folder for the Datagroup System
+		DG_PATH		< $(PROJ_DATASET)datagroupsystem/
+
+	# DG_CATALOGS_PATH: Prepends the project datagroup catalog folder to the location for datagroup catalog files
+		DG_CATALOGS_PATH	< $(PROJ_DATASET)datagroupcatalogs/
+
+	# DG_SCHEDULE_LAYOUT_PATH: Prepends the project datagroup layout folder to the location for datagroup schedule templates
+		DG_SCHEDULE_LAYOUT_PATH	< $(PROJ_DATASET)datagrouplayouts/ 
+	
+#======================================================================
+# Drawing Extractions:
+#======================================================================
+	# TFBXS_SEEDDIR: Location of Template Drawing Extraction Definition Seed Files
+		# TFBXS_SEEDDIR	= $(TFDIR)seed/DEM_templates/
+
+	# TFBXS_SEEDFILE: Seed file for seed Drawing Extraction Definitions. Can be set to point to a *.bxs or *.dgn file
+		# TFBXS_SEEDFILE	= $(TFBXS_SEEDDIR)DEM_Templates_$(bb_discipline).dgn
+
+	# TF_DRAWSEED: Specifies the seed file to be used when a new drawing extraction file is created.
+		# TF_DRAWSEED		= DrawingSeed_DEM.dgn
+		
+	# BB_ANNOTATE_IN3DDGN: Causes Create Space to place physical space label into 3D instead of space artifact. 
+	# 	Needed to work with the DEM.
+		# BB_ANNOTATE_IN3DDGN = 1 
+
+#======================================================================
+# Bentley Building Annotation
+#======================================================================
+	# ATFFILE_DRAWINGRULES: Specifies the name and location of the file that stores the application's drawing rules.
+		# ATFFILE_DRAWINGRULES	= $(PROJ_DATASET)rules/Architectural.rul
+		
+	# HVACFILE_DRAWINGRULES: Specifies the name and location of the file that stores the application's drawing rules.
+		# HVACFILE_DRAWINGRULES	= $(PROJ_DATASET)rules/Mechanical.rul  
+
+	# STFFILE_DRAWINGRULES: Specifies the name and location of the file that stores the application's drawing rules.
+		# STFFILE_DRAWINGRULES 	= $(PROJ_DATASET)rules/Structural.rul 
+		
+	# STFFILE_MODELSTYLES:
+		# STFFILE_MODELSTYLES 	= $(PROJ_DATASET)rules/StructuralAnnotation.rul
+
+	# BB_ECQUERY_PATH: Specifies the search path for saved EC QUeries used with drawing rules	
+		# BB_ECQUERY_PATH < $(PROJ_DATASET)rules/
+		
+	# BB_CELL_SYMBOL_PATH: Specifies the search path for cell symbols used within drawing rules
+	 	# BB_CELL_SYMBOL_PATH < $(PROJ_DATASET)cell/
+	
+	# BB_ANNOTATION_CELLLIB: Specifies the Project location and the name of the cell library file used for DataGroup annotations.
+		# BB_ANNOTATION_CELLLIB = $(PROJ_DATASET)cell/Annotation_DG.cel
+
+	# BB_TERMINATOR_CELLLIB: Specifies the Project location and the name of the terminators cell library file used for DataGroup annotations.
+		# BB_TERMINATOR_CELLLIB = $(PROJ_DATASET)cell/terminator.cel
+
+	#----------------------------------------------------------------------
+	# The _TF_ANNOTATE_*_XPATH variables are used to define the XPath
+	# to the DataGroup Definition and property that are used to store the
+	# value that is used in the particular Annotation tool.
+	#----------------------------------------------------------------------
+		TF_ANNOTATE_DOOR_ID_XPATH=ObjectIdentity/@InstanceMark
+		TF_ANNOTATE_WINDOW_ID_XPATH=ObjectIdentity/@InstanceMark
+		
+	# TFANNOTATION_CELL_LIBFILE: Specifies the location and the name of the cell library file used for the Annotation tools.
+		# TFANNOTATION_CELL_LIBFILE = $(TFDIR)cell/annotation.cel
+		
+	# TFANNOTATION_SCALECELL_LIBFILE: Specifies the location and the name of the cell library file used for the Annotation tools.
+		# TFANNOTATION_SCALECELL_LIBFILE = $(TFDIR)cell/GraphicScales.cel	
+
+	# TFANNOTATION_CODEDNOTETERMCELL_LIBFILE: Annotation Tool Coded Note Terminator cell library file 
+		# TFANNOTATION_CODEDNOTETERMCELL_LIBFILE = $(TFDIR)cell/CodedNoteTerminator.cel
+		
+	# TFANNOTATION_CODEDNOTECELL_LIBFILE: Annotation Tool Coded Note Callout cell library file
+		# TFANNOTATION_CODEDNOTECELL_LIBFILE 	= $(TFDIR)cell/CodedNoteMainCallout.cel				
+
+	# TFANNOTATION_OVERRIDES: Specifies the location of the annotation settings file used for the Annotation tools.
+		TFANNOTATION_OVERRIDES	= $(PROJ_DATASET)setting/
+		
+	# TFANNOTATION_PREFS: Specifies the location of the annotation user preference file used for the Annotation tools.
+		# TFANNOTATION_PREFS	= $(_USTN_HOMEPREFS)
+			
+#======================================================================
+# Output Directories:
+#======================================================================
+	# MS_BACKUP: Default directory for backup files.
+		MS_BACKUP 	= $(_USTN_OUT)bak/
+
+	# MS_DGNOUT: Specifies the location for exported DGN files (V7)
+		MS_DGNOUT	= $(_USTN_OUT)dgn/
+
+	#BB_GBXML_OUT: Specifies the location for GBxml file exports 	
+		BB_GBXML_OUT = $(_USTN_OUT)gbxml/
+
+	# TFDIR_IFC: For import: IFC-files are searched in the folder defined by this variable 			
+		TFDIR_IFC = $(_USTN_OUT)ifc/
+
+	# MS_PLTFILES: Specifies the location for plot files, including pdf output    
+		MS_PLTFILES	= $(_USTN_OUT)plot/
+		
+	# MS_STANDARDSCHECKER_OUT: Specifies the location for Standards Checker Reports    
+		MS_STANDARDSCHECKER_OUT = $(_USTN_OUT)standards checker/
+
+	# MS_STEPOUT: Specifies the location for Step file exports    
+		MS_STEPOUT	= $(_USTN_OUT)step/            
+
+#======================================================================
+# Bentley Building Designer Behavior:
+#======================================================================
+	# TF_USE2DSYMFORMASK: Use shapes in 2d symbols for forward reflected view masking
+		TF_USE2DSYMFORMASK 	= 1		
+
+	# TF_DONOT_PRESERVE_SYMBOLOGY: Forces Bentley Building to change the symbology of 2D components of compound cells in hidden line views.
+		# TF_DONOT_PRESERVE_SYMBOLOGY = 1
+
+	# TF_BYPASS_VALIDATION: Skip the dataset validation process when starting BIM products
+		TF_BYPASS_VALIDATION = 1   
+	
+	# BB_SPACELEGEND_AUTOUPDATE: Enables updating of the space legend when opening a model
+		# BB_SPACELEGEND_AUTOUPDATE = 1   
+	
+	# BB_CEILINGS_FIXTURELIBRARY: Specifies the cell library that contains the light fixtures for the Ceiling Grid tool
+		# BB_CEILINGS_FIXTURELIBRARY = $(PROJ_DATASET)cell/CeilingFixtures.cel
+
+	# BB_CEILINGS_PATTERNLIBRARY: Specifies the cell library that contains the patterns for the Ceiling Grid tool
+		# BB_CEILINGS_PATTERNLIBRARY = $(PROJ_DATASET)cell/CeilingPatterns.cel
+
+#----------------------------------------------------------------------------
+# GBXML/EAM Configuration Variables
+#----------------------------------------------------------------------------
+	BB_EAM_MAPPINGFILE = $(PROJ_DATASET)data/EnergyAnalysisMappings.xml
+
+#----------------------------------------------------------------------------
+# Mechanical Configuration Variables
+#----------------------------------------------------------------------------
+    # BMECH_AUTOFITTINGOPTIONS_FILE: Specifies Autofitting Options for HVAC and Plumbing
+    	BMECH_AUTOFITTINGOPTIONS_FILE  = $(PROJ_DATASET)data/AutoFittingOptions.xml
+
+#----------------------------------------------------------------------------
+# Structural Configuration Variables
+#----------------------------------------------------------------------------
+	# STRFILE_MODELCOPESETTINGSXML 	= $(PROJ_DATASET)setting/
+	# STF_QUANTIFYXLS 		= $(STFDIR_DATA) 
+	# STFDIR_QUANTIFYXLS 		= $(STFDIR_DATA)
+
+#----------------------------------------------------------------------------
+# Bentley RAM Structural System Configuration Variables
+#----------------------------------------------------------------------------
+	# STFDIR_RAMSTRSYSTEMPROGRAM : $(_USTN_BENTLEYROOT)ram/RAM Structural System/prog/
+
+#----------------------------------------------------------------------------
+# Bentley OpenSTAAD Configuration Variables
+#----------------------------------------------------------------------------
+	STFDIR_OPENSTAAD : $(_USTN_BENTLEYROOT)openSTAAD/
+	STFDIR_DATA : $(STF_DATASET)data/
+	STFDIR_SETTINGS : $(STF_DATASET)setting/
+
+#----------------------------------------------------------------------------
+# Structural Drawing Center Variables
+#----------------------------------------------------------------------------
+	# STRFILE_DRAWINGCELLLIBRARY 	= $(PROJ_DATASET)cell/DrawingCells.cel
+	# STRFILE_DRAWINGSETTINGSXML 	= $(PROJ_DATASET)setting/DrawingSettings.xml
+	# STRFILE_DRAWINGEXPLORERFILE 	= $(PROJ_DATASET)dgnlib/DrawingExplorer.dgnlib
+
+#----------------------------------------------------------------------------
+# Electrical Configuration Variables
+#----------------------------------------------------------------------------	
+	# BBES_DATASETS: Specifies the BBES workspace folders
+	# BBES_DATASETS 		= $(TF_DATASETS)
+	  
+	# BBES_WORKSPACEROOT: Specifies the BBES dataset folders
+	# BBES_WORKSPACEROOT 		= $(BBES_DATASETS)
+	  
+	# BBES_DATASETNAME:  Sets the name of the folder containing the Electrical Dataset folders
+	# BBES_DATASETNAME 		= $(TF_DATASETNAME)
+	  
+	# BBESDIR:  Path location of the BBES Dataset folder
+	# BBESDIR 			= $(BBES_DATASETS)$(BBES_DATASETNAME)
+
+	# BBESDATA: Dataset location for BBES
+	# BBESDATA 			= ${BBESDIR}
+	  
+	# BBES_DBDIR: Specifies the location of the project database for BBES
+	# BBES_DBDIR 			= $(PROJ_DATASET)electricaldatabase/
+	  
+	# BBES_SYMBOLMANAGER_REDIRPATH: Specifies the location where the BBES subtypes are stored for the project.	
+	# BBES_SYMBOLMANAGER_REDIRPATH 	= $(PROJ_DATASET)electricaldatabase/subtypes/
+
+	# BBESDIR_LOCALSETTINGSFOLDER: Specifies the location where the BBES Symbol Library # is recorded.		
+	# BBESDIR_LOCALSETTINGSFOLDER	= $(PROJ_DATASET)electricaldatabase/
+
+	# BBES_LIGHTSOURCE_LEVEL: Level for text that displays information about light sources in BBES symbols:
+	# BBES_LIGHTSOURCE_LEVEL 	= E-LITE-IES
+
+	# BBES_SHAREDCELLS: Prevents bbes from using shared cells (Only turn on if having issues with extremely large file sizes)
+	# BBES_SHAREDCELLS 		= 0
+
+#======================================================================
+# The BB_SPACELEGEND_xxx control the default behavior of the space legend tool.
+# Uncomment BB_SPACELEGEND_AUTOUPDATE to enable updating of the space legend when opening a model
+#======================================================================
+	# BB_SPACELEGEND_AUTOUPDATE  = 1
+		BB_SPACELEGEND_TITLESTYLE   = ArialNarrow-3.5mm
+		BB_SPACELEGEND_BODYSTYLE    = ArialNarrow-2.5mm
+
+	# Variables for setting the precision of the area value generated by the space tool.
+	# Valid values are 0 - 6 with the default being 2.
+		TFANNOTATE_AREAPRECISION = 2
+
+	# Space label preference, Workspace>Preferences>Building Architectural "Units of Display"
+		_ATFSPACES_DISPLAY_UNITS = sq m
+		# BB_SPACES_NOARTIFACT = 1
+
+#------------------------------------------------------------------------
+# Search paths to IFC configuration and mapping file
+#------------------------------------------------------------------------
+	IFC_PROJECT_SETTING  = $(PROJ_DATASET)setting/
+	IFCDIR_SETTING       < $(IFC_PROJECT_SETTING)
+
+#======================================================================
+# IFC Dataset Extension: 
+# This include statement must be processed last in the PCF
+# Lock is required on IFC_PROJECT variable to prevent changes at the USER level
+#====================================================================== 
+  	# Enables the Dataset to be extended to include IFC2x3 property sets.
+  	# IFC_PROJECT=0, dataset not extend, 
+ 	# IFC_PROJECT=1, dataset extended with IFC psets
+ 	# IFC_PROJECT=2, dataset extended with IFC psets Plus FM Handover(COBie)
+
+  	IFC_PROJECT : 1
+  	%lock IFC_PROJECT
+    
+  	%if $(IFC_PROJECT)==1 || $(IFC_PROJECT)==2
+    		%if exists ($(IFCDIR)Dataset.cfg)
+      			% include $(IFCDIR)Dataset.cfg
+    		%endif
+  	%endif
+	
+

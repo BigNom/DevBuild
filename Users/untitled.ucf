@@ -1,0 +1,21 @@
+#----------------------------------------------------------------------
+#
+#  untitled.ucf - Copy this file as a starting point for new workspaces.
+#
+#   $RCSfile: untitled.ucf,v $
+#  $Revision: 1.1 $  
+#      $Date: 2008/07/30 19:58:57 $
+#
+#  $Copyright: (c) 2008 Bentley Systems, Incorporated. All rights reserved. $
+#
+#----------------------------------------------------------------------
+
+_USTN_USERDESCR     = Untitled Workspace
+_USTN_PROJECTNAME   = untitled
+
+%if defined (_NAVIGATOR)
+_USTN_USERINTNAME = default
+%endif
+MS_PROTECTION_ENABLE = 1
+TF_NOCOMPATIBILITYWARNING = 1
+MS_GUIDGNLIBLIST > N:/14_EngineeringServices/Drafting/_Projects/35999_WODGINA_LITHIUM/99_Admin/support/dataset/dgnlib/AER_TOOLBARS.dgnlib

@@ -1,0 +1,20 @@
+#===========================================================================
+# FixDataFields Configuration File	- $Revision: 7.0 $  
+# Updated by Harry Aug 08 to insert title (5 digits) v5
+# Updated by Harry Mar 10 to replace border in merged files		22.03.10
+# Created by Corporate Montage 		- edited by Steve Gate	March 2012
+#
+#===========================================================================
+#---------------------------------------------------------------------------
+
+
+CELL_LIBRARY,BHPBIO-General.cel,
+
+REFSUB,BIOB1_v6,BIOB1_v7
+
+#---------------------------------------------------------------------------
+# iFound = 11;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-B1 TITLE DATA INFILL (5 DIGITS) v4, G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,REPLACETITLE, NUMFIELDS,58, DONTADDZERO
+CELLSUB,     G-B1 TITLE DATA INFILL (5 DIGITS) v5, G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,REPLACETITLE, NUMFIELDS,58, DONTADDZERO

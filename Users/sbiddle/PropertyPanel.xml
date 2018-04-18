@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<HeaderLayout name="PropertyPanel">
+	<Column name="Name">
+		<Display name="Name" order="0" hidden="false" width="120"/>
+	</Column>
+	<Column name="Value">
+		<Display name="Value" order="1" hidden="false" width="213"/>
+	</Column>
+</HeaderLayout>

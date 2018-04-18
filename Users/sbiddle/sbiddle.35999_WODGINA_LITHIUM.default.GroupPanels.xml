@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Group Panel Persistent Settings Repository
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+**** MODIFIYING THIS FILE MAY RENDER IT INVALID AND/OR CAUSE UNEXPECTED SIDE EFFECTS ****
+
+If this file cannot be parsed, it will be renamed to have a ".bad" file extension.
+This means that the default (blank) settings will then be used.
+
+Format:
+  <GroupPanelPersistentSettings>
+    <GroupPanelContainer Key="...">
+      <CustomData>...</CustomData>
+      <GroupPanels>
+        <GroupPanel Key="..." State="[Open|Closed]" Visible="[True|False]">
+          <CustomData>...</CustomData>
+        </GroupPanel>
+      </GroupPanels>
+    </GroupPanelContainer>
+  </GroupPanelPersistentSettings>
+
+  * Sequence of GroupPanel elements within GroupPanels element implies order.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+<GroupPanelPersistentSettings>
+  <GroupPanelContainer Key="MultiPropertyGrid:NavigatorPropGridState">
+    <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="MultiPropertyGridSettings.01.00"><SelectedGrid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" /></Settings>]]></CustomData>
+    <GroupPanels>
+      <GroupPanel Key="General" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Description</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Contents" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Text String</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Formatting" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Is Annotation</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Geometry" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Volume</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Extended" State="Closed" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Model</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Raw Data" State="Closed" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Element ID</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Groups" State="Closed" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Graphic Group</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Material" State="Closed" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Assigned Materials</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Attachment" State="Closed" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>File Name</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Structural Quantities" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Volume (Gross) cubic mm</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Structural Data" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Section Name</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Quantities |Fireproofing" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Fireproofing | Surface Area</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Fireproofing" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Fireproofing Material</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Thermal Transmittance" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Is Below Grade</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Fire Resistance" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Fire | Compartmentation</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Identification" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>ID | Asset Tag</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Structural Usage" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Structural | Function</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Structural Floor" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Section Name</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Materials" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Part Definition</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Steel Brace Results" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Maximum Axial Force</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Properties" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Element ID</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Classification" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>CBI 2011</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Quantities |Structural" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Area | Cross-sectional</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Construction Phase" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Phase</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="LEED Parameters" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>LEED | Post-consumer Recycled (%)</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="IFC Override" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>IFC 2x3 Entity/Type Override</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Clip Volume" State="Closed" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Angle</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Annotation" State="Closed" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Detailing Symbol Style</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Steel Beam Results" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Camber</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Pset_BeamCommon" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>FireRating</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Acoustical Parameters" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Acoustic Rating (STC)</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Wall Parameters" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Manufacturer</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Wall Dimensions" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Height</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Pset_WallCommon" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>AcousticRating</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Quantification" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Length | Left</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Space Bounding" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Is Space Bounding</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Railing Parameters" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Balusters 1 | Base Offset</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Pset_RailingCommon" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>Diameter</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Pset_MemberCommon" State="Open" Visible="True">
+        <CustomData><![CDATA[<?xml version="1.0" encoding="utf-8"?><Settings xmlns="GridPanelSettings.01.00"><LHSSelectedItem>FireRating</LHSSelectedItem><LHSExpandedItems /></Settings>]]></CustomData>
+      </GroupPanel>
+    </GroupPanels>
+  </GroupPanelContainer>
+  <GroupPanelContainer Key="ViewAttributesDialogMainGroupContainer">
+    <CustomData><![CDATA[332x300]]></CustomData>
+    <GroupPanels>
+      <GroupPanel Key="Presentation" State="Open" Visible="True">
+        <CustomData><![CDATA[List;HudMarkerPopupSize=300,200]]></CustomData>
+      </GroupPanel>
+      <GroupPanel Key="Building" State="Open" Visible="True" />
+      <GroupPanel Key="Clip Volume Settings" State="Open" Visible="True" />
+      <GroupPanel Key="View Setup" State="Closed" Visible="True" />
+    </GroupPanels>
+  </GroupPanelContainer>
+</GroupPanelPersistentSettings>

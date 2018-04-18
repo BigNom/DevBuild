@@ -1,0 +1,80 @@
+#===========================================================================
+# FixDataFields Configuration File	- $Revision: 7.0 $  
+# Updated by Harry Aug 08 to insert title (5 digits) v5
+# Updated by Harry Mar 10 to replace border in merged files		22.03.10
+# Created by Corporate Montage 		- edited by Steve Gate	March 2012
+#
+#===========================================================================
+#---------------------------------------------------------------------------
+#
+# Use CM_FIXDATAFIELDS_COMMAND to point to this file
+#
+#---------------------------------------------------------------------------
+# Available commands:
+#---------------------------------------------------------------------------
+#
+# CELL_LIBRARY,cell_lib_path		- Sets the default cell library
+#
+#
+# REFSUB,OldRef,NewRef			- Replaces Ref file (don't include suffix '.dgn')
+#
+#
+# CELLSUB,oldcellname,newcellname,.. - replaces cell instance(s)
+#
+# This can be followed by any number of cell commands
+# eg: CELLSUB,oldcellname,newcellname, SCALE,10, SPLIT,-1, NUMFIELDS,5, DRAWINGNUM,3, ORDER,A1WITHREFS, DONTADDZERO, FILL,GENERAL
+#
+#
+# List of Cell Commands follows:
+#
+# CellCommands with number as parameter:
+#
+# SCALE,num, SPLIT,num, DRAWINGNUM,num, NUMFIELDS,num
+#
+#
+# CellCommands with Keyword as parameter:
+#
+# SETORDER,orderkeyword
+#
+# Order Keywords are A1WITHREFS,A1TITLEWITHREFS,A1SIGNATURE,B1WITHOUTREFS,GENERAL,BYLEGACY,A1_GS5106,A1_GS0106,A1_GS5107,
+# REPLCAESIGNATURE and REPLACETITLE
+# Note that BYLEGACY also fills in the NUMFIELDS and will override anything you specify with NUMFIELDS22
+#
+#
+# FILL,keyword 
+# Fill keywords are SIGNATURE,TITLE,GENERAL. Note that TITLE also fills in Signature if it exists
+#
+#
+# CellCommand with no parameters:
+# DONTADDZERO
+#
+# Note: leading and trailing spaces are ignored
+# Note Don't use quote marks
+#
+#---------------------------------------------------------------------------
+
+
+CELL_LIBRARY,BHPBIO-General.cel,
+
+
+#===========================================================================
+# Ref Substitutions
+#===========================================================================
+
+REFSUB,BIOB1_v6,BIOA1_v7
+REFSUB,BIOB1_v7,BIOA1_v7
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 10;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-B1 SIGNATURE DATA INFILL v5,         G-A1 SIGNATURE DATA INFILL v5,              ORDER,SIGNATURE, SPLIT,-1, NUMFIELDS,193, FILL,SIGNATURE
+
+
+#---------------------------------------------------------------------------
+# iFound = 11;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-B1 TITLE DATA INFILL (5 DIGITS) v5, G-A1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,REPLACETITLE, NUMFIELDS,58, DONTADDZERO

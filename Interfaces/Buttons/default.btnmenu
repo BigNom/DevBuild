@@ -1,0 +1,13 @@
+204 0,pan drag
+200 4,pan scroll
+200 10,match attributes fromcursor
+203 8,inputmanager menu main
+204 8,navigate swivel
+204 10,rotate view fromcursor
+204 4,rotate view drag
+203 10,mdl keyin elementinfo element quickinfo fromcursor
+202 10,buttonaction 3ddata
+203 4,inputmanager menu viewpopup
+202 4,inputmanager menu tentativepopup
+203 c,SCREENMENU OPENPOPUP ScreenMenus,ViewControlMenu,ViewControlMenu
+202 8,ROTATE VIEW EXTENDED

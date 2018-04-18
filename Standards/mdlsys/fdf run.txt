@@ -1,0 +1,11 @@
+#How to run FixDataFields in batch
+#
+#Comment out the lines you do not need by placing a hash symbol (#) before the keyin.
+#In Microstation go to Utilities>Batch Process... and load this file as the command file.
+#Add any files you need by going to Edit>Add files.
+#Click the Process Batch Process Job icon.
+#
+#
+#mdl load fdf_2004
+#mdl load fdf_XM
+mdl load fdf_v8i

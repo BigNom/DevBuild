@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BentleyWMSFile>
+    <VERSION>1.3</VERSION>
+    <URL>https://iogisimg.apac.ent.bhpbilliton.net/arcgis/services/Imagery/AerialImagery/ImageServer/WMSServer</URL>
+    <REQUEST>
+        <VERSION>1.1.1</VERSION>
+        <SRS>EPSG:4326</SRS>
+        <LAYERS>0</LAYERS>
+        <STYLES />
+        <FORMAT>image/png</FORMAT>
+        <TRANSPARENT>TRUE</TRANSPARENT>
+    </REQUEST>
+    <MAPEXTENT>
+        <BBOX>116.505073,-24.61976,120.742188,-20.221229</BBOX>
+    </MAPEXTENT>
+    <LayerList>
+        <LAYER TITLE="AerialImagery" NAME="0"  ABSTRACT="This mosaic dataset is a subset (reference mosaic dataset) of Imagery mosaic dataset and it contains only aerial imagery of various resolutions and acquisition dates. The colour balance has been applied on some imagery to improve a visualisation effect. Spatial reference System: EPSG:3857, WGS 1984 Web Mercator (Auxiliary Sphere)." />
+    </LayerList>
+    <SERVICE>
+        <MAXWIDTH>1024</MAXWIDTH>
+        <MAXHEIGHT>1024</MAXHEIGHT>
+    </SERVICE>
+    <EditorData>
+        <RangeMethod>Calculated</RangeMethod>
+        <LayerRange>Intersection</LayerRange>
+        <UseModelCoordSysUsefulRange>True</UseModelCoordSysUsefulRange>
+        <UseMapCoordSysUsefulRange>True</UseMapCoordSysUsefulRange>
+        <ExplicitSRS>False</ExplicitSRS>
+    </EditorData>
+</BentleyWMSFile>

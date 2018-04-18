@@ -1,0 +1,50 @@
+#----------------------------------------------------------------------
+#
+# BuildingTemplate_AU.pcf - AECOsim Building Designer AU Project Configuration File
+#
+# $Copyright: (c) 2015 Bentley Systems, Incorporated. All rights reserved. $
+#
+#----------------------------------------------------------------------
+#======================================================================
+# Project Configuration File
+#======================================================================
+	# Project Description as it will appear in Workspace menu > About Workspace
+		_USTN_PROJECTDESCR 	= BHP LSS
+#======================================================================
+# Establish Project Directories:
+#======================================================================
+
+PROJ_DATASET 	= $(_USTN_PROJECTDATA)99_Admin/support/dataset/
+_USTN_OUT 	= $(_USTN_PROJECTDATA)99_Admin/support/out/
+MS_DEF 		= $(_USTN_PROJECTDATA)
+MS_DESIGNDIR 	= $(_USTN_PROJECTDATA)01_Models/Concrete/
+MS_DRAWINGDIR 	= $(_USTN_PROJECTDATA)02_Drawings/Concrete/
+MS_SHEETDIR 	= $(_USTN_PROJECTDATA)02_Drawings/Concrete/
+TF_DRAWINGS 	=  $(_USTN_PROJECTDATA)02_Drawings/Concrete/
+TFDIR_CELL 	< $(PROJ_DATASET)cell/
+ATFDIR_CELL	< $(PROJ_DATASET)cell/
+TFDIR_PART 	< $(PROJ_DATASET)part/
+		
+#======================================================================
+# Establish Reference Directories:
+#======================================================================
+MS_RFDIR 		> $(_USTN_PROJECTDATA)01_Models/
+MS_RFDIR 		> $(MS_DRAWINGDIR)02_Drawings/
+MS_RFDIR 		> $(TF_DRAWINGS)
+MS_RFDIR 		> $(MS_SHEETDIR) 
+MS_RFDIR 		> $(PROJ_DATASET)seed/
+MS_RFDIR 		> $(PROJ_DATASET)seed/borders/
+MS_MARKUPPATH 		> $(MS_RFDIR)
+			
+#======================================================================
+# Output Directories:
+#======================================================================
+MS_BACKUP 	= $(_USTN_OUT)bak/
+MS_DGNOUT	= $(_USTN_OUT)dgn/
+BB_GBXML_OUT = $(_USTN_OUT)gbxml/	
+TFDIR_IFC = $(_USTN_OUT)ifc/    
+MS_PLTFILES	= $(_USTN_OUT)plot/
+MS_STEPOUT	= $(_USTN_OUT)step/            
+
+
+

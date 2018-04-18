@@ -1,0 +1,10 @@
+﻿<Organization xmlns="GeoCoordinateSystem.01.00">
+  <Root>
+    <Name>Favorites</Name>
+    <Members>
+      <Member>
+        <KeyName>MGA94-50</KeyName>
+      </Member>
+    </Members>
+  </Root>
+</Organization>

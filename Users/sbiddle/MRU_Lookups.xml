@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<DataGroupSystem>
+	<Version major="1" minor="0"/>
+	<Units master="" sub=""/>
+	<DataGroupSystemPrefs>
+		<MRULookups>
+			<MRULookup item="Structural/Steel/Beam/LastUsedSections">
+				<MRULookupItem name="20 Round"/>
+				<MRULookupItem name="360UB44.7"/>
+			</MRULookup>
+			<MRULookup item="Structural/Steel/Beam/LastUsedItem/Steel Beam">
+				<MRULookupItem name="Primary Beam 360UB44.7"/>
+			</MRULookup>
+		</MRULookups>
+	</DataGroupSystemPrefs>
+</DataGroupSystem>

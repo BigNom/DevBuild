@@ -1,0 +1,395 @@
+#===========================================================================
+# FixDataFields Configuration File	- $Revision: 7.0 $  
+# Updated by Harry Aug 08 to insert title (5 digits) v5
+# Updated by Harry Mar 10 to replace border in merged files		22.03.10
+# Created by Corporate Montage 		- edited by Steve Gate	March 2012
+#
+#===========================================================================
+#---------------------------------------------------------------------------
+#
+# Use CM_FIXDATAFIELDS_COMMAND to point to this file
+#
+#---------------------------------------------------------------------------
+# Available commands:
+#---------------------------------------------------------------------------
+#
+# CELL_LIBRARY,cell_lib_path		- Sets the default cell library
+#
+#
+# REFSUB,OldRef,NewRef			- Replaces Ref file (don't include suffix '.dgn')
+#
+#
+# CELLSUB,oldcellname,newcellname,.. - replaces cell instance(s)
+#
+# This can be followed by any number of cell commands
+# eg: CELLSUB,oldcellname,newcellname, SCALE,10, SPLIT,-1, NUMFIELDS,5, DRAWINGNUM,3, ORDER,A1WITHREFS, DONTADDZERO, FILL,GENERAL
+#
+#
+# List of Cell Commands follows:
+#
+# CellCommands with number as parameter:
+#
+# SCALE,num, SPLIT,num, DRAWINGNUM,num, NUMFIELDS,num
+#
+#
+# CellCommands with Keyword as parameter:
+#
+# SETORDER,orderkeyword
+#
+# Order Keywords are A1WITHREFS,A1TITLEWITHREFS,A1SIGNATURE,B1WITHOUTREFS,GENERAL,BYLEGACY,A1_GS5106,A1_GS0106,A1_GS5107,
+# REPLCAESIGNATURE and REPLACETITLE
+# Note that BYLEGACY also fills in the NUMFIELDS and will override anything you specify with NUMFIELDS22
+#
+#
+# FILL,keyword 
+# Fill keywords are SIGNATURE,TITLE,GENERAL. Note that TITLE also fills in Signature if it exists
+#
+#
+# CellCommand with no parameters:
+# DONTADDZERO
+#
+# Note: leading and trailing spaces are ignored
+# Note Don't use quote marks
+#
+#---------------------------------------------------------------------------
+
+
+CELL_LIBRARY,BHPBIO-General.cel,
+
+
+#===========================================================================
+# Ref Substitutions
+#===========================================================================
+
+REFSUB,BHPBIO PP A1,BHPBIO_PP_A1_v4
+REFSUB,BHPBIO PP A1 v1,BHPBIO_PP_A1_v4
+REFSUB,BHPBIO PP A1 v2,BHPBIO_PP_A1_v4
+REFSUB,BHPBIO PP A1 V3,BHPBIO_PP_A1_v4
+REFSUB,BIOA1,BIOA1_v6
+REFSUB,BIOA1 v1,BIOA1_v6
+REFSUB,BIOA1 v2,BIOA1_v6
+REFSUB,BIOA1 v3,BIOA1_v6
+REFSUB,BIOA1_v4,BIOA1_v6
+REFSUB,BIOA1_v5,BIOA1_v6
+REFSUB,BIOA1_v6,BIOA1_v7
+
+REFSUB,BIOB1,BIOB1_v6
+REFSUB,BIOB1 v1,BIOB1_v6
+REFSUB,BIOB1 v2,BIOB1_v6
+REFSUB,BIOB1 v3,BIOB1_v6
+REFSUB,BIOB1_v4,BIOB1_v6
+REFSUB,BIOB1_v5,BIOB1_v6
+REFSUB,BIOB1_v6,BIOB1_v7
+
+REFSUB,JIMA1,BIOA1_v6
+REFSUB,JIMA1 v1,BIOA1_v6
+REFSUB,JIMA1 v2,BIOA1_v6
+REFSUB,JIMA1 v3,BIOA1_v6
+REFSUB,JIMA1_v4,BIOA1_v6
+REFSUB,BHPBIO_GEOLOGY_A1_LAND,BHPBIO_GEOLOGY_A1_LAND_v2
+REFSUB,BHPBIO_GEOLOGY_A1_PORT,BHPBIO_GEOLOGY_A1_PORT_v2
+
+
+
+#===========================================================================
+# drop old titleblock cells
+#===========================================================================
+CELLDROP, BHP039
+CELLDROP, BD001
+CELLDROP, BD002
+CELLDROP, BD003
+CELLDROP, noname
+
+#===========================================================================
+# Cells
+#===========================================================================
+# Note: Will replace the one cell with both of the below (or whichever one is found)
+
+CELLSUB, G-A1 P AND D, G-A1 P AND D v2, ORDER,LONGORDER, FILL,LONGORDER, NUMFIELDS,550, DONTADDZERO
+
+#===========================================================================
+# iFound = 1;
+#===========================================================================
+
+CELLSUB,     G-A1 Data Fields,                      G-A1 SIGNATURE DATA INFILL v4,            ORDER,A1WITHREFS
+CELLSUB,     G-A1 Data Fields,                      G-A1 TITLE DATA INFILL (5 DIGITS) v5,     ORDER,A1WITHREFS
+
+#---------------------------------------------------------------------------
+# will replace the one cell with both of the below (or whichever one is found) 
+# CELLSUB,G-A1 Data Fields,G-A1 SIGNATURE DATA INFILL v3, ORDER,A1WITHREFS
+# CELLSUB,G-A1 Data Fields,G-A1 TITLE DATA INFILL (5 DIGITS) v3, ORDER,A1WITHREFS
+# iFound = 1;
+# setOrder_A1withRefs( SignatureOrder, TitleOrder );
+#---------------------------------------------------------------------------
+
+
+
+#===========================================================================
+# iFound = 2;
+#===========================================================================
+
+CELLSUB,     G-BHPBIO B1 Data Infill,               G-B1 SIGNATURE DATA INFILL (5 DIGITS) v5,   ORDER,B1WITHOUTREFS
+CELLSUB,     G-BHPBIO B1 Data Infill,               G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,B1WITHOUTREFS
+
+#---------------------------------------------------------------------------
+# iFound = 3;
+# again two substitutions in the hope of finding one of the new cells?
+# CELLSUB,G-BHPBIO B1 Data Infill,G-B1 SIGNATURE DATA INFILL (5 DIGITS) v2, ORDER,B1WITHOUTREFS
+# CELLSUB,G-BHPBIO B1 Data Infill,G-B1 TITLE DATA INFILL  (5 DIGITS) v2, ORDER,B1WITHOUTREFS
+# setOrder_B1withoutRefs( SignatureOrder, TitleOrder );
+#---------------------------------------------------------------------------
+
+
+
+#===========================================================================
+# iFound = 3;
+#===========================================================================
+
+#CELLSUB,     GS0070,                                G-A1 SIGNATURE DATA INFILL v4,              FILL,TITLE, ORDER,A1WITHREFS, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,235
+#CELLSUB,     GS0070,                                G-A1 TITLE DATA INFILL (5 DIGITS) v5,       FILL,TITLE,ORDER, A1WITHREFS, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,235
+#===========================================================================
+# Changed by Harry for BD001
+#===========================================================================
+CELLSUB,     GS0070,                                G-A1 SIGNATURE DATA INFILL v4,              FILL,TITLE,ORDER, A1_GS0070A, DRAWINGNUM,8, SPLIT,999, NUMFIELDS,235
+CELLSUB,     GS0070,                                G-A1 TITLE DATA INFILL (5 DIGITS) v5,       FILL,TITLE,ORDER, A1_GS0070A, DRAWINGNUM,8, SPLIT,999, NUMFIELDS,235
+
+#---------------------------------------------------------------------------
+# iFound = 4;
+# again two substitutions in the hope of finding one of the new cells?
+# CELLSUB,GS0070,G-A1 SIGNATURE DATA INFILL v3, ORDER,A1WITHREFS, DRAWINGNUM,8, SPLIT,-1, NUMFIELDS,235
+# CELLSUB,GS0070,G-A1 TITLE DATA INFILL (5 DIGITS) v3, ORDER,A1WITHREFS, DRAWINGNUM,8, SPLIT,-1, NUMFIELDS,235
+# setOrder_A1withRefs( SignatureOrder, TitleOrder );
+# iDrawingNum = 8;
+# iSplit = -1;
+# iExpectNumDataFields = 235;
+#---------------------------------------------------------------------------
+
+
+
+#===========================================================================
+# iFound = 4;
+#===========================================================================
+
+CELLSUB,     GS0106,                                G-A1 SIGNATURE DATA INFILL v4,              ORDER,A1_GS0106, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,201
+CELLSUB,     GS0106,                                G-A1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,A1_GS0106, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,201
+
+#===========================================================================
+# iFound = 4 again;
+# added for BHP039
+#===========================================================================
+
+CELLSUB,     GS0106,                                G-A1 SIGNATURE DATA INFILL v4,              ORDER,BHP039, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,203
+CELLSUB,     GS0106,                                G-A1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,BHP039, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,203
+
+
+#---------------------------------------------------------------------------
+# iFound = 5;
+# CELLSUB,GS0106,G-A1 SIGNATURE DATA INFILL v3, ORDER,BHP039, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,201
+# CELLSUB,GS0106,G-A1 TITLE DATA INFILL (5 DIGITS) v3, ORDER,BHP039, DRAWINGNUM,8, SPLIT,9, NUMFIELDS,201
+# setOrder_A1_GS0106( SignatureOrder, TitleOrder );
+# iDrawingNum = 8;
+# iSplit = 9;
+# iExpectNumDataFields = 201;
+#---------------------------------------------------------------------------
+
+
+
+#===========================================================================
+# iFound = 5;
+#===========================================================================
+
+CELLSUB,     GS0107,                                G-B1 SIGNATURE DATA INFILL v4,              ORDER,B1WITHOUTREFS, SPLIT,9, DRAWINGNUM,8, NUMFIELDS,201
+CELLSUB,     GS0107,                                G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,B1WITHOUTREFS, SPLIT,9, DRAWINGNUM,8, NUMFIELDS,201
+
+#---------------------------------------------------------------------------
+# iFound = 6;
+# CELLSUB,GS0107,G-B1 SIGNATURE DATA INFILL (5 DIGITS) v2, ORDER,B1WITHOUTREFS, SPLIT,9,  DRAWINGNUM,8, NUMFIELDS,201
+# CELLSUB,GS0107,G-B1 TITLE DATA INFILL  (5 DIGITS) v2, ORDER,B1WITHOUTREFS, SPLIT,9,  DRAWINGNUM,8, NUMFIELDS,201
+# setOrder_B1withoutRefs( SignatureOrder, TitleOrder );
+# iSplit = 9;
+# iDrawingNum = 8;
+# iExpectNumDataFields = 201;
+#---------------------------------------------------------------------------
+
+
+
+#===========================================================================
+# iFound = 6;
+#===========================================================================
+
+CELLSUB,     GS5106,                                G-A1 SIGNATURE DATA INFILL v4,              SCALE,10, ORDER,A1_GS5106, SPLIT,9, DRAWINGNUM,8, NUMFIELDS,201
+CELLSUB,     GS5106,                                G-A1 TITLE DATA INFILL (5 DIGITS) v5,       SCALE, 1, ORDER,A1_GS5106, SPLIT,9, DRAWINGNUM,8, NUMFIELDS,201
+
+#---------------------------------------------------------------------------
+# iFound = 7;
+# CELLSUB,GS5106,GG-A1 SIGNATURE DATA INFILL v3, SCALE,10,  ORDER,A1_GS5106, SPLIT,9,  DRAWINGNUM,8, NUMFIELDS,201
+# CELLSUB,GS5106,G-A1 TITLE DATA INFILL (5 DIGITS) v3, SCALE,10,  ORDER,A1_GS5106, SPLIT,9,  DRAWINGNUM,8, NUMFIELDS,201
+# scale.x *= 10;
+# scale.y *= 10;
+# setOrder_A1_GS5106( SignatureOrder, TitleOrder );
+# iSplit = 9;
+# iDrawingNum = 8;
+# iExpectNumDataFields = 201;
+#---------------------------------------------------------------------------
+
+
+
+#===========================================================================
+# iFound = 7;
+#===========================================================================
+
+CELLSUB,     GS5107,                                G-B1 SIGNATURE DATA INFILL v4,              SCALE,10, ORDER,A1_GS5107, SPLIT,9, DRAWINGNUM,8, NUMFIELDS,201
+CELLSUB,     GS5107,                                G-B1 TITLE DATA INFILL (5 DIGITS) v5,       SCALE, 1, ORDER,A1_GS5107, SPLIT,9, DRAWINGNUM,8, NUMFIELDS,201
+
+#---------------------------------------------------------------------------
+# iFound = 8;
+# CELLSUB,GS5107,G-B1 SIGNATURE DATA INFILL (5 DIGITS) v2, SCALE,10, ORDER,A1_GS5107, SPLIT,9,  DRAWINGNUM,8, NUMFIELDS,201
+# CELLSUB,GS5107,G-B1 TITLE DATA INFILL  (5 DIGITS) v2
+# setOrder_A1_GS5107( SignatureOrder, TitleOrder );
+# scale.x *= 10;
+# scale.y *= 10;
+# iSplit = 9;
+# iDrawingNum = 8;
+# iExpectNumDataFields = 201;
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 8;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-A1 SIGNATURE DATA INFILL,            G-A1 SIGNATURE DATA INFILL v5,              FILL,TITLE, ORDER,A1SIGNATURE, DRAWINGNUM,-1, SPLIT,-1, NUMFIELDS,193
+CELLSUB,     G-A1 SIGNATURE DATA INFILL v2,         G-A1 SIGNATURE DATA INFILL v5,              FILL,TITLE, ORDER,A1SIGNATURE, DRAWINGNUM,-1, SPLIT,-1, NUMFIELDS,193
+#CELLSUB,     G-A1 SIGNATURE DATA INFILL v4,         G-A1 SIGNATURE DATA INFILL v5,              FILL,TITLE, ORDER,A1SIGNATURE, DRAWINGNUM,-1, SPLIT,-1, NUMFIELDS,193
+CELLSUB,     G-A1 SIGNATURE DATA INFILL v4,         G-A1 SIGNATURE DATA INFILL v5,              FILL,TITLE, ORDER,A1SIGNATURE, DRAWINGNUM,-1, SPLIT,-1, NUMFIELDS,193
+
+#---------------------------------------------------------------------------
+# iFound = 2;
+# CELLSUB,G-A1 SIGNATURE DATA INFILL,G-A1 SIGNATURE DATA INFILL v3, ORDER,A1SIGNATURE, DRAWINGNUM,-1, SPLIT,-1, NUMFIELDS,193, FILL,SIGNATURE
+# setOrder_A1Signature( SignatureOrder );
+# iDrawingNum = -1;
+# iSplit = -1;
+# iExpectNumDataFields = 193;
+# if (( iFound == 2 ) || ( iFound == 27 )) ..fillDataFields SignatureCell	
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 9;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-A1 TITLE DATA INFILL,                G-A1 TITLE DATA INFILL (5 DIGITS) v5,       FILL,TITLE, ORDER,A1TITLEWITHREFS, SPLIT,-1, DRAWINGNUM,8,  NUMFIELDS,42
+CELLSUB,     G-A1 TITLE DATA INFILL (5 DIGITS),     G-A1 TITLE DATA INFILL (5 DIGITS) v5,       FILL,TITLE, ORDER,A1TITLEWITHREFS, SPLIT,-1, DRAWINGNUM,-1, NUMFIELDS,42
+CELLSUB,     G-A1 TITLE DATA INFILL  (5 DIGITS),    G-A1 TITLE DATA INFILL (5 DIGITS) v5,       FILL,TITLE, ORDER,A1TITLEWITHREFS, SPLIT,-1, DRAWINGNUM,-1, NUMFIELDS,42
+CELLSUB,     G-A1 TITLE DATA INFILL (5 DIGITS) v2,  G-A1 TITLE DATA INFILL (5 DIGITS) v5,       FILL,TITLE, ORDER,V2TITLE,         SPLIT,-1, DRAWINGNUM,-1, NUMFIELDS,42
+CELLSUB,     G-A1 TITLE DATA INFILL (5 DIGITS) v4,  G-A1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER, REPLACETITLE, NUMFIELDS,58, DONTADDZERO
+
+#---------------------------------------------------------------------------
+# iFound = 9;
+# CELLSUB,G-A1 TITLE DATA INFILL,G-A1 TITLE DATA INFILL (5 DIGITS) v3, ORDER,A1TITLEWITHREFS, SPLIT,-1,  DRAWINGNUM,8, NUMFIELDS,42
+# setOrder_A1TitlewithRefs( TitleOrder );
+# iSplit = -1;
+# iDrawingNum = 8;
+# iExpectNumDataFields = 42;
+#
+# iFound = 9; again
+# CELLSUB,G-A1 TITLE DATA INFILL (5 DIGITS),G-A1 TITLE DATA INFILL (5 DIGITS) v3, ORDER,A1TITLEWITHREFS, SPLIT,-1,  DRAWINGNUM,-1, NUMFIELDS,42
+# CELLSUB,G-A1 TITLE DATA INFILL  (5 DIGITS),G-A1 TITLE DATA INFILL (5 DIGITS) v3, ORDER,A1TITLEWITHREFS, SPLIT,-1,  DRAWINGNUM,-1, NUMFIELDS,42
+# setOrder_A1TitlewithRefs( TitleOrder );
+# iSplit = -1;
+# iDrawingNum = -1;
+# iExpectNumDataFields = 42;
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 10;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-B1 SIGNATURE DATA INFILL,            G-B1 SIGNATURE DATA INFILL v5,              ORDER,SIGNATURE, SPLIT,-1, NUMFIELDS,193, FILL,SIGNATURE
+CELLSUB,     G-B1 SIGNATURE DATA INFILL v2,         G-B1 SIGNATURE DATA INFILL v5,              ORDER,SIGNATURE, SPLIT,-1, NUMFIELDS,193, FILL,SIGNATURE
+#CELLSUB,     G-B1 SIGNATURE DATA INFILL v4,         G-B1 SIGNATURE DATA INFILL v4,              ORDER,SIGNATURE, SPLIT,-1, NUMFIELDS,193, FILL,SIGNATURE
+CELLSUB,     G-B1 SIGNATURE DATA INFILL v4,         G-B1 SIGNATURE DATA INFILL v5,              ORDER,SIGNATURE, SPLIT,-1, NUMFIELDS,193, FILL,SIGNATURE
+
+#---------------------------------------------------------------------------
+# iFound = 27
+# CELLSUB, G-B1 SIGNATURE DATA INFILL,G-B1 SIGNATURE DATA INFILL v2, ORDER,SIGNATURE, SPLIT,-1, NUMFIELDS,193, FILL,SIGNATURE
+# setOrder_A1Signature( SignatureOrder );
+# iExpectNumDataFields = 193;
+# if (( iFound == 2 ) || ( iFound == 27 )) ..fillDataFields SignatureCell
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 11;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-B1 TITLE DATA INFILL,                G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,B1TITLEWITHREFS, SPLIT,-1, DRAWINGNUM,-1, NUMFIELDS,42
+CELLSUB,     G-B1 TITLE DATA INFILL (5 DIGITS),     G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,B1TITLEWITHREFS, SPLIT,-1, DRAWINGNUM,-1, NUMFIELDS,42
+CELLSUB,     G-B1 TITLE DATA INFILL  (5 DIGITS),    G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,B1TITLEWITHREFS, SPLIT,-1, DRAWINGNUM,-1, NUMFIELDS,42
+CELLSUB,     G-B1 TITLE DATA INFILL (5 DIGITS) v4, G-B1 TITLE DATA INFILL (5 DIGITS) v5,       ORDER,REPLACETITLE, NUMFIELDS,58, DONTADDZERO
+
+#---------------------------------------------------------------------------
+# iFound = 10;
+# CELLSUB,G-B1 TITLE DATA INFILL,G-B1 TITLE DATA INFILL  (5 DIGITS) v2, ORDER, B1TITLEWITHREFS, SPLIT,-1,  DRAWINGNUM,-1, NUMFIELDS,42
+# setOrder_B1TitlewithRefs( TitleOrder );
+# iSplit = -1;
+# iDrawingNum = 8;
+# iExpectNumDataFields = 42;
+#
+# iFound = 10;again
+# CELLSUB,G-B1 TITLE DATA INFILL (5 DIGITS),G-B1 TITLE DATA INFILL  (5 DIGITS) v5, ORDER,B1TITLEWITHREFS, SPLIT,-1,  DRAWINGNUM,-1, NUMFIELDS,42
+# CELLSUB,G-B1 TITLE DATA INFILL  (5 DIGITS),G-B1 TITLE DATA INFILL  (5 DIGITS) v5, ORDER,B1TITLEWITHREFS, SPLIT,-1,  DRAWINGNUM,-1, NUMFIELDS,42
+# setOrder_B1TitlewithRefs( TitleOrder );
+# iSplit = -1;
+# iDrawingNum = -1;
+# iExpectNumDataFields = 42;
+#---------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------
+# iFound = 28;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-A1 GEO LAND TITLE DATA INFILL,       G-A1 GEO LAND TITLE DATA INFILL v2,         ORDER,A1TITLEWITHREFS, SCALE,0.1, FILL,TITLE, DRAWINGNUM,9, NUMFIELDS,10
+
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 29;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-A1 GEO LAND SIGNATURE DATA INFILL,   G-A1 GEO LAND SIGNATURE DATA INFILL v2,     ORDER,GEO,             SCALE,0.1, FILL,TITLE, DRAWINGNUM,6, NUMFIELDS,7
+
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 30;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-A1 GEO PORT TITLE DATA INFILL,       G-A1 GEO PORT TITLE DATA INFILL v2,         ORDER,A1TITLEWITHREFS, SCALE,0.1, FILL,TITLE, DRAWINGNUM,9, NUMFIELDS,10
+
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# iFound = 31;
+#---------------------------------------------------------------------------
+
+CELLSUB,     G-A1 GEO PORT SIGNATURE DATA INFILL,   G-A1 GEO PORT SIGNATURE DATA INFILL v2,     ORDER,GEOPORT,         SCALE,0.1, FILL,TITLE, DRAWINGNUM,6, NUMFIELDS,7
+
+#---------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------
+# end
+#---------------------------------------------------------------------------

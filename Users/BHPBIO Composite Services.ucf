@@ -1,0 +1,29 @@
+#======================================================================
+# User Configuration File 		- $Revision: 8.1 $  
+# Created by Corporate Montage 	- edited by Steve Gate		Mar 2017
+#======================================================================
+#----------------------------------------------------------------------
+#
+#  Copyright 1998, Bentley Systems, Inc.
+#
+#  Limited permission is hereby granted to reproduce and modify this
+#  copyrighted material provided that the resulting code is used only in
+#  conjunction with Bentley Systems products under the terms of the
+#  license agreement provided therein, and that this notice is retained
+#  in its entirety in any such reproduction or modification.
+#
+#----------------------------------------------------------------------
+
+_USTN_PROJECTNAME = BHPBIO Composite Services
+_USTN_USERINTNAME = Default
+
+
+
+ACADPAN_BUTTON = 0
+ACADPAN_DELAY = 20
+ACADPAN_DCTIME = 1.00
+ACADPAN_UPDATE = 0
+ACADPAN_RESET = 1
+ACADPAN_DCLICK = -1
+
+MS_CMDTABLE_LOAD > xyztxt

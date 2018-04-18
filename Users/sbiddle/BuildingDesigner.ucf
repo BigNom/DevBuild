@@ -1,0 +1,12 @@
+# AECOsim Building Designer SS6 - QuickConfig Standard
+# BuildingDesigner.ucf - User Configuration File
+# Bentley Systems UK Ltd - 19 June 2015
+# v 1.0 for distribution
+#----------------------------------------------------------------------
+_USTN_USERINTNAME = default
+_USTN_PROJECTNAME = 35999_WODGINA_LITHIUM
+TF_NOCOMPATIBILITYWARNING = 1
+MX_SNAP = GEOMETRY
+MS_FONTPATH > N:/14_EngineeringServices/Drafting/_Projects/35999_WODGINA_LITHIUM/99_Admin/WorkSpace/System/Fonts/
+MS_MDLAPPS > N:/14_EngineeringServices/Drafting/Admin/Bentley/ABDSs6/Standards/mdlapps/
+_USTN_DISPLAYALLCFGVARS = 1

@@ -1,0 +1,32 @@
+#======================================================================
+# Ref2Model Configuration File	- $Revision: 7.0 $  
+# Created by Corporate Montage 	- edited by Steve Gate		Feb 2012
+#======================================================================
+#----------------------------------------------------------------------
+#
+# Use CM_REF2MODEL_CONFIG to point to this file
+#
+# Use EXT to specify an output extension
+# Use PATH to specify an output path
+# Use SUBPATH to specify a relative output folder. The folder will be created if it does not exist
+#----------------------------------------------------------------------
+
+#EXCLUDE=BORDERFILE.DGN
+
+BATCH
+
+LOG
+
+CLIP
+
+CLIPPING_SHAPE=Default;1;2;3
+
+#DONT_FORCE_TOP_VIEW
+
+EXT DGN
+#PATH C:\Temp
+SUBPATH \R2Moutput
+
+
+#UNLOAD=CADconform
+

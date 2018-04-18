@@ -1,0 +1,519 @@
+<HTML><HEAD><TITLE>CAD Standards Report</TITLE>
+<style>
+@page jpage { size: 10cm 10cm }
+.tablefolder {page:jpage;width:100%;background-color:D6D3CE;}
+.dictname{text-align:center;font-family: Verdana,Helvetica,Arial;font-size: 17pt;font-weight:bold;}
+.dictdesc{text-align:center;font-family: Verdana,Helvetica,Arial;font-size: 17pt;}
+.foldername{text-align:center;font-family: Verdana,Helvetica,Arial;font-size: 12pt;font-weight:bold;}
+.folderdesc{text-align:center;font-family: Verdana,Helvetica,Arial;font-size: 10pt;font-weight:bold;}
+.featuretable {page:jpage;width:100%;border-width:0;background-color:000;}
+.cfeaturetypeheading {text-align:left;font-family: Verdana,Helvetica,Arial;font-size: 10pt;font-weight:bold;}
+.cfeatureheading {text-align:left;font-family: Verdana,Helvetica,Arial;font-size: 8pt;font-weight:bold;background-color:D6D3CE;}
+.cfeature{text-align:left;font-family: Verdana,Helvetica,Arial;font-size: 8pt;font-weight:normal;background-color:EFEFEF;}
+.csymbolpic {height:100;width:100;display:"none";} 
+.colLibTableName {display:"none";} 
+.colLibTableDesc {display:"none";} 
+
+.colName {display:"inline";} 
+.colLevel {display:"inline";} 
+.colColour {display:"inline";} 
+.colWeight {display:"inline";} 
+.colLineStyle {display:"inline";} 
+.colTextScale {display:"inline";} 
+.colTextFont {display:"inline";} 
+.colTextWeight {display:"none";} 
+.colLineSpacing {display:"inline";} 
+.colCellName {display:"inline";} 
+.colTextStyle {display:"inline";} 
+.colDimStyle {display:"inline";} 
+.colKeyin {display:"inline";} 
+.colCellLibrary {display:"inline";} 
+.colExtra {display:"inline"}; 
+.colFill {display:"inline"}; 
+.colFeatureType {display:"inline";} 
+.colElmType {display:"none";} 
+</style>
+</HEAD>
+<BODY>
+<TABLE class='tablefolder'><TR><TD class='dictname'>CADconform Dictionary Report</TD></TR><TR><TD class='dictdesc'>Thu Aug 31 13:39:35 2017
+<br>Produced By CADconform</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Dictionary Summary</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='200' class='cfeatureheading '>Dictionary</TD><TD width='50' class='cfeatureheading '>Version</TD><TD width='50' class='cfeatureheading '>#Cells</TD><TD width='50' class='cfeatureheading '>#Linear</TD><TD width='50' class='cfeatureheading '>#Text</TD><TD width='50' class='cfeatureheading '>#Dimensions</TD><TD width='50' class='cfeatureheading '>#3D Solids</TD><TD width='50' class='cfeatureheading '>#Leaders</TD><TD width='50' class='cfeatureheading '>#Hatching</TD></TR>
+<TR class='cfeature'><TD class= ''>3D_RailSignals,</TD><TD class= ''>8.1</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>7</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>Dimensions</TD><TD class= ''>8.1</TD><TD class= ''>0</TD><TD class= ''>1</TD><TD class= ''>2</TD><TD class= ''>16</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>Electrical_Cells</TD><TD class= ''>8.1</TD><TD class= ''>6</TD><TD class= ''>1</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>Electrical_Layout</TD><TD class= ''>8.1</TD><TD class= ''>2</TD><TD class= ''>25</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>Electrical_Linework</TD><TD class= ''>8.1</TD><TD class= ''>0</TD><TD class= ''>8</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>General</TD><TD class= ''>8.1</TD><TD class= ''>20</TD><TD class= ''>12</TD><TD class= ''>2</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>Rail_Signal_Cells</TD><TD class= ''>8.0</TD><TD class= ''>3</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>Rail_Track_Linework</TD><TD class= ''>8.1</TD><TD class= ''>0</TD><TD class= ''>6</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+<TR class='cfeature'><TD class= ''>Text,</TD><TD class= ''>8.1</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>8</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD><TD class= ''>0</TD></TR>
+</TABLE>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>3D_RailSignals,</TD></TR><TR><TD class='dictdesc'>CMONTAGE60</TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>3D Solids</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>3D RailSignals</TD><TD class= 'colLevel'>R-Rail General Symbols[R-Rail Cells, R-Rail General Symbols, R-Rail Track, R-Rail Track Existing, R-Rail Track Future, R-Rail Track Negative, R-Rail Track Positive, R-Rail Track Removed]</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>3D Electrical</TD><TD class= 'colLevel'>E-Electrical Equipment[301-324,399-400,802-809,890]</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Low voltage cable ladders</TD><TD class= 'colLevel'>E-Low Voltage Cable Ladders</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Panels</TD><TD class= 'colLevel'>E-Panels</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Background Features</TD><TD class= 'colLevel'>E-Background</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Electrical Equipment</TD><TD class= 'colLevel'>E-Electrical Equipment</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>High voltage cable ladders</TD><TD class= 'colLevel'>E-High Voltage Cable Ladders</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>Dimensions</TD></TR><TR><TD class='dictdesc'></TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Linear</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colFill'>Fill</TD><TD width='50' class='cfeatureheading colStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Witness Lines</TD><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Annotation</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='100' class='cfeatureheading colTextStyle'>Text Style</TD><TD width='70' class='cfeatureheading colColour'>Colour</TD><TD width='20' class='cfeatureheading colLineStyle'>Style</TD><TD width='20' class='cfeatureheading colTextWeight'>Weight</TD><TD width='30' class='cfeatureheading colTextFont'>Font</TD><TD width='20' class='cfeatureheading colTextScale'>Width</TD><TD width='20' class='cfeatureheading colTextScale'>Height</TD><TD width='20' class='cfeatureheading colTextLineSpacing'>Spacing</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Place Note Text 2.5mm</TD><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>1[0]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>2.5</TD><TD class= 'colScale'>2.5</TD><TD class= 'colTextLineSpacing'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Place Note Text 3.5mm</TD><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>2[0]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>3.5</TD><TD class= 'colScale'>3.5</TD><TD class= 'colTextLineSpacing'></TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Dimensions</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD class='cfeatureheading'>Details</TD></TR>
+<TR class='cfeature'><TD class= 'colName'><b>Angular 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Inline</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Angular 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Inline</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Linear 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Inline</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Linear 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Inline</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Set Linear Dim Attributes 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Inline</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Set Linear Dim Attributes 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Inline</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Diameter 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Diameter 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Radius 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Radius 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Extended Diameter 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Extended Diameter 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Extended Radius 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Extended Radius 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Set Radial Dim Attributes 2.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= 'colName'><b>Set Radial Dim Attributes 3.5</b></TD><TD class= 'colName'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Dimension Style</TD><TD class= 'colDimStyle'></TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>Lines</TD><TD class= 'colDimStyle'><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='90' class='cfeatureheading colLevel'>Level</TD><TD width='50' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colLevel'>G-Dimensions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[1]</TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Extension Lines</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading '>Offset</TD><TD width='50' class='cfeatureheading '>Extent</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colDimStyle'>0</TD><TD class= ''> 0</TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Terminators</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Arrow</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Min.Leader</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''>filled</TD><TD class= ''>1.2</TD><TD class= ''>0.4</TD><TD class= ''>1.5</TD><TD class= ''>&nbsp</TD></TR>
+</TABLE>
+<TR class='cfeature'><TD class= ''>Text</TD><TD class= ''><TABLE cellspacing='1' class='featuretable'></TD></TR>
+<TR><TD width='50' class='cfeatureheading '>Weight</TD><TD width='50' class='cfeatureheading '>Font</TD><TD width='50' class='cfeatureheading '>Width</TD><TD width='50' class='cfeatureheading '>Height</TD><TD width='50' class='cfeatureheading '>Orient</TD><TD width='50' class='cfeatureheading '>Frame</TD><TD width='50' class='cfeatureheading '>Margin</TD><TD width='50' class='cfeatureheading '>Just</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= ''>Horiz.</TD><TD class= ''></TD><TD class= ''></TD><TD class= ''></TD><TD class= 'colExtra'>&nbsp</TD></TR>
+</TABLE>
+</TABLE>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>Electrical_Cells</TD></TR><TR><TD class='dictdesc'></TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Linear</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colFill'>Fill</TD><TD width='50' class='cfeatureheading colStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Electrical Cells</TD><TD class= 'colLevel'>ES-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>10[0]</TD><TD  width='15' bgcolor='#FE0060'><font color='#FE0060'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>2[0-3]</TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Cells</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colCellName'>Cell</TD><TD width='70' class='cfeatureheading colCellLibrary'>Library</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading colScale'>Scale</TD><TD width='50' class='cfeatureheading colExtra'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Electrical Schmatics</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-ElectricalSchematics</TD><TD class= 'colLevel'>ES-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Misc Electronic Symbols</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-MiscElectronicSymbols</TD><TD class= 'colLevel'>ES-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO SLD</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-SLD</TD><TD class= 'colLevel'>SL-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO MCC Communications</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-MCCCom.cel</TD><TD class= 'colLevel'>CL-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Misc Communications</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-MiscCom.cel</TD><TD class= 'colLevel'>CL-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Network Communications</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-NetCom.cel</TD><TD class= 'colLevel'>CL-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>Electrical_Layout</TD></TR><TR><TD class='dictdesc'></TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Linear</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colFill'>Fill</TD><TD width='50' class='cfeatureheading colStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Electrical Equipment</TD><TD class= 'colLevel'>E-Electrical Equipment</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>2[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Background Electrical Features</TD><TD class= 'colLevel'>E-Background</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>9[0-9]</TD><TD  width='15' bgcolor='#C0C0C0'><font color='#C0C0C0'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>0[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Cable Pits</TD><TD class= 'colLevel'>E-Cable Pits</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>6[0,3,9]</TD><TD  width='15' bgcolor='#FF7F00'><font color='#FF7F00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0,2]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Cable Ladder HV</TD><TD class= 'colLevel'>E-High Voltage Cable Ladders</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>3[8-9]</TD><TD  width='15' bgcolor='#FF0000'><font color='#FF0000'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>2[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Cable Ladder LV</TD><TD class= 'colLevel'>E-Low Voltage Cable Ladders</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>2[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>3.3kV High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 3 3kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5[1]</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>3.3kV solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>6.6kV High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 6 6kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5[1]</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>6.6kV solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>11kV High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 11kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[3]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>11kV solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>22kV High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 22kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[3]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>22kV solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>33kV High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 33kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>10[3]</TD><TD  width='15' bgcolor='#FE0060'><font color='#FE0060'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>33kv Solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>66kV High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 66kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>3[5]</TD><TD  width='15' bgcolor='#FF0000'><font color='#FF0000'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>66kV solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>132kV High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 132kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>6[7]</TD><TD  width='15' bgcolor='#FF7F00'><font color='#FF7F00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>132kv solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>440V High Voltage Power AG</TD><TD class= 'colLevel'>E-High Voltage Power AG 440V</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>2</TD><TD  width='15' bgcolor='#00FF00'><font color='#00FF00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>440V solid[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>3.3kV High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 3 3kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5[1]</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>3.3kV dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>6.6kV High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 6 6kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5[1]</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>6.6kV dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>11kV High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 11kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[3]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>11kV dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>22kV High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 22kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[3]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>22kV dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>33kV High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 33kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>10[3]</TD><TD  width='15' bgcolor='#FE0060'><font color='#FE0060'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>33kV dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>66kV High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 66kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>3[5]</TD><TD  width='15' bgcolor='#FF0000'><font color='#FF0000'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>66kV dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>132kV High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 132kV</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>6[7]</TD><TD  width='15' bgcolor='#FF7F00'><font color='#FF7F00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>132kv dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>440V High Voltage Power UG</TD><TD class= 'colLevel'>E-High Voltage Power UG 440V</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>2</TD><TD  width='15' bgcolor='#00FF00'><font color='#00FF00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>440V dash[0-7]</TD><TD class= 'colWeight'>2[0,3,7]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Overhead Lines</TD><TD class= 'colLevel'>E-Overhead Lines</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>3[9]</TD><TD  width='15' bgcolor='#FF0000'><font color='#FF0000'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7, High volt power solid, Low volt power solid]</TD><TD class= 'colWeight'>2[0-1,3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Conduits - Electrical</TD><TD class= 'colLevel'>E-Conduits Electrical</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5[0-4,9]</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>2[0-7]</TD><TD class= 'colWeight'>2[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Conduits - Communication</TD><TD class= 'colLevel'>E-Conduits Communication</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>2[0-7]</TD><TD class= 'colWeight'>2[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Panels</TD><TD class= 'colLevel'>E-Panels</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[1-4,8-9]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0,2]</TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Cells</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colCellName'>Cell</TD><TD width='70' class='cfeatureheading colCellLibrary'>Library</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading colScale'>Scale</TD><TD width='50' class='cfeatureheading colExtra'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Cable Ladder Cells</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-Cable Ladders.cel</TD><TD class= 'colLevel'>E-Low Voltage Cable Ladders</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Electrical Layout Symbols</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-LightingandSmallPower</TD><TD class= 'colLevel'>E-Electrical Layout Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>Electrical_Linework</TD></TR><TR><TD class='dictdesc'></TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Linear</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colFill'>Fill</TD><TD width='50' class='cfeatureheading colStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Auxiliary</TD><TD class= 'colLevel'>EL-Linework Auxiliary</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Busbar</TD><TD class= 'colLevel'>EL-Linework Busbar</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>4[0-6]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Cable Line</TD><TD class= 'colLevel'>EL-Linework Cable Line</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[0-4,8-9]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0,2-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Earthing</TD><TD class= 'colLevel'>EL-Linework Earthing</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>3[0-7, Earth dash, Earth solid]</TD><TD class= 'colWeight'>1[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Equipment Outline</TD><TD class= 'colLevel'>EL-Linework Equipment Outline</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[0-4,8-9]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Linework Control</TD><TD class= 'colLevel'>EL-Linework Control</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>2[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Power</TD><TD class= 'colLevel'>EL-Linework Power</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[2,3,6]</TD><TD class= 'colWeight'>3[0-2]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Termination Block</TD><TD class= 'colLevel'>EL-Linework Termination Block</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[2-6]</TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>General</TD></TR><TR><TD class='dictdesc'></TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Linear</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colFill'>Fill</TD><TD width='50' class='cfeatureheading colStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Border Data Lines</TD><TD class= 'colLevel'>G-Border Data</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[6]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>1[1-5]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Center Lines</TD><TD class= 'colLevel'>G-Center Lines</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5[0,8-9]</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>4[7]</TD><TD class= 'colWeight'>1[0-2]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Center Lines 2</TD><TD class= 'colLevel'>G-Center Lines 2</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>5[0,8-9]</TD><TD  width='15' bgcolor='#FF00FF'><font color='#FF00FF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>Centreline 2[7]</TD><TD class= 'colWeight'>1[0-2]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>General Hatching</TD><TD class= 'colLevel'>G-Hatching</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>9[0-15, BG]</TD><TD  width='15' bgcolor='#C0C0C0'><font color='#C0C0C0'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>0[0-5]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Draw General Symbols</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[0-15]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[1-7]</TD><TD class= 'colWeight'>1[0-8]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Match Line</TD><TD class= 'colLevel'>G-Match Line</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[0-15]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>3[0-8]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Table Linework</TD><TD class= 'colLevel'>G-Table Linework</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[0-15]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0-5]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Holds Clouds</TD><TD class= 'colLevel'>G-Holds</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>4</TD><TD  width='15' bgcolor='#FFFF00'><font color='#FFFF00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>0[0-2]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Grid</TD><TD class= 'colLevel'>G-Grid</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[5,8-9]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>4[0,7]</TD><TD class= 'colWeight'>1[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Plant Grid</TD><TD class= 'colLevel'>G-Plant Grid</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[5,8-9]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[4,7]</TD><TD class= 'colWeight'>1[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Annotation Indicator</TD><TD class= 'colLevel'>G-Annotation Indicator</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[0-15]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Revision Clouds</TD><TD class= 'colLevel'>G-Revisions</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>3[0,4]</TD><TD  width='15' bgcolor='#FF0000'><font color='#FF0000'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[2]</TD><TD class= 'colWeight'>0[0-4]</TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Annotation</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='100' class='cfeatureheading colTextStyle'>Text Style</TD><TD width='70' class='cfeatureheading colColour'>Colour</TD><TD width='20' class='cfeatureheading colLineStyle'>Style</TD><TD width='20' class='cfeatureheading colTextWeight'>Weight</TD><TD width='30' class='cfeatureheading colTextFont'>Font</TD><TD width='20' class='cfeatureheading colTextScale'>Width</TD><TD width='20' class='cfeatureheading colTextScale'>Height</TD><TD width='20' class='cfeatureheading colTextLineSpacing'>Spacing</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Holds Text 2.5mm</TD><TD class= 'colLevel'>G-Holds</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[8-9]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>1[0,2-3]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>2.5</TD><TD class= 'colScale'>2.5</TD><TD class= 'colTextLineSpacing'>1.25</TD><TD class= 'colExtra'>Class: Primary</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Grid Notation 2.5mm</TD><TD class= 'colLevel'>G-Grid Notation</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[9]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0[1]</TD><TD class= 'colWeight'>0</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>2.5[2.5-3.5]</TD><TD class= 'colScale'>2.5[2.5-3.5]</TD><TD class= 'colTextLineSpacing'>1.25</TD><TD class= 'colExtra'>Class: Primary</TD></TR>
+</TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Cells</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colCellName'>Cell</TD><TD width='70' class='cfeatureheading colCellLibrary'>Library</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading colScale'>Scale</TD><TD width='50' class='cfeatureheading colExtra'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHP Area Patterning</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-AreaPatterning</TD><TD class= 'colLevel'>G-General Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Diamond</TD><TD class= 'colCellName'>G-HOLD DIAMOND 6 CH</TD><TD class= 'colCellLibrary'>BHPBIO-General</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Annotation Arrow</TD><TD class= 'colCellName'>G-ANNOTATION ARROW 2</TD><TD class= 'colCellLibrary'>BHPBIO-General</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Triangle</TD><TD class= 'colCellName'>G-REVISION TRIANGLE</TD><TD class= 'colCellLibrary'>BHPBIO-General</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Triangle (3 Chars)</TD><TD class= 'colCellName'>G-REVISION TRIANGLE (3 CHARS)</TD><TD class= 'colCellLibrary'>BHPBIO-General</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>General Cells</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-General</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'>1</TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Title Data Infill Cell</TD><TD class= 'colCellName'>G-A1 TITLE DATA INFILL (5 DIGITS) v5</TD><TD class= 'colCellLibrary'>BHPBIO-General</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'>1</TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Signature Data Infill Cell</TD><TD class= 'colCellName'>G-A1 SIGNATURE DATA INFILL v5</TD><TD class= 'colCellLibrary'>BHPBIO-General</TD><TD class= 'colLevel'>G-Symbols</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'>1</TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Project Cells</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>Project Cells</TD><TD class= 'colLevel'>G-Project Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Scalebars</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-Scalebars</TD><TD class= 'colLevel'>G-General Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'>1</TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Mobile Equipment</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-MobileEquipment</TD><TD class= 'colLevel'>G-General Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'>1</TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Safety Cells</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-SafetySymbols.cel</TD><TD class= 'colLevel'>G-General Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'>1</TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Office Excel 97-2003 Worksheet</TD><TD class= 'colCellName'>Microsoft Office Excel 97-2003 Worksheet</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Office Excel Worksheet</TD><TD class= 'colCellName'>Microsoft Office Excel Worksheet</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Excel Worksheet</TD><TD class= 'colCellName'>Microsoft Excel Worksheet</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Office Excel Workbook</TD><TD class= 'colCellName'>Microsoft Office Excel Workbook</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Excel Workbook</TD><TD class= 'colCellName'>Microsoft Excel Workbook</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Office Excel Macro Enabled Workbook</TD><TD class= 'colCellName'>Microsoft Office Excel Macro Enabled Workbook</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Excel Macro Enabled Workbook</TD><TD class= 'colCellName'>Microsoft Excel Macro Enabled Workbook</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Microsoft Excel 97-2003 Worksheet</TD><TD class= 'colCellName'>Microsoft Excel 97-2003 Worksheet</TD><TD class= 'colCellLibrary'></TD><TD class= 'colLevel'>G-Excel Worksheet</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'></TD></TR>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>Rail_Signal_Cells</TD></TR><TR><TD class='dictdesc'></TD></TR><TR><TD class='dictdesc'>V8.0</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Cells</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colCellName'>Cell</TD><TD width='70' class='cfeatureheading colCellLibrary'>Library</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colLineStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD width='50' class='cfeatureheading colScale'>Scale</TD><TD width='50' class='cfeatureheading colExtra'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Rail Layout</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-RailLayouts</TD><TD class= 'colLevel'>R-Rail Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Rail Control</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-RailSignals</TD><TD class= 'colLevel'>R-Rail Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>BHPBIO Rail Schematic</TD><TD class= 'colCellName'></TD><TD class= 'colCellLibrary'>BHPBIO-RailSchematic</TD><TD class= 'colLevel'>R-Rail Cells</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD></TD></TABLE></TD><TD class= 'colLineStyle'></TD><TD class= 'colWeight'></TD><TD class= 'colScale'></TD><TD class= 'colExtra'>Place absolute</TD></TR>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>Rail_Track_Linework</TD></TR><TR><TD class='dictdesc'></TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Linear</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='70' class='cfeatureheading colColour'>Color</TD><TD width='50' class='cfeatureheading colFill'>Fill</TD><TD width='50' class='cfeatureheading colStyle'>Style</TD><TD width='50' class='cfeatureheading colWeight'>Weight</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Rail Track</TD><TD class= 'colLevel'>R-Rail Track</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>6[0-4,8-9]</TD><TD  width='15' bgcolor='#FF7F00'><font color='#FF7F00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>4[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Rail Track Existing</TD><TD class= 'colLevel'>R-Rail Track Existing</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>9[0-4,8]</TD><TD  width='15' bgcolor='#C0C0C0'><font color='#C0C0C0'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>2[0-7]</TD><TD class= 'colWeight'>3[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Rail Track Future</TD><TD class= 'colLevel'>R-Rail Track Future</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>7[0-4,8-9]</TD><TD  width='15' bgcolor='#00FFFF'><font color='#00FFFF'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>4[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Rail Track Removed</TD><TD class= 'colLevel'>R-Rail Track Removed</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>3[0-4,8-9]</TD><TD  width='15' bgcolor='#FF0000'><font color='#FF0000'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>1[0-7]</TD><TD class= 'colWeight'>3[0-3]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Rail Track Positive</TD><TD class= 'colLevel'>R-Rail Track Positive</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>3[9]</TD><TD  width='15' bgcolor='#FF0000'><font color='#FF0000'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>4[0-4]</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>Rail Track Negative</TD><TD class= 'colLevel'>R-Rail Track Negative</TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>2[9]</TD><TD  width='15' bgcolor='#00FF00'><font color='#00FF00'>W</font></TD></TABLE></TD><TD class= 'colFill'></TD><TD class= 'colLineStyle'>0[0-7]</TD><TD class= 'colWeight'>1[0-2]</TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+<BR>
+<TABLE class='tablefolder'><TR><TD class='dictname'>Text,</TD></TR><TR><TD class='dictdesc'>CMONTAGE60</TD></TR><TR><TD class='dictdesc'>V8.1</TD></TR></TABLE>
+<TABLE><TR><TD class='cfeaturetypeheading'>Annotation</TD></TR></TABLE>
+<TABLE cellspacing='1' class='featuretable'>
+<TR><TD width='80' class='cfeatureheading colName'>Feature</TD><TD width='70' class='cfeatureheading colLevel'>Level</TD><TD width='100' class='cfeatureheading colTextStyle'>Text Style</TD><TD width='70' class='cfeatureheading colColour'>Colour</TD><TD width='20' class='cfeatureheading colLineStyle'>Style</TD><TD width='20' class='cfeatureheading colTextWeight'>Weight</TD><TD width='30' class='cfeatureheading colTextFont'>Font</TD><TD width='20' class='cfeatureheading colTextScale'>Width</TD><TD width='20' class='cfeatureheading colTextScale'>Height</TD><TD width='20' class='cfeatureheading colTextLineSpacing'>Spacing</TD><TD class='cfeatureheading'>Extra</TD></TR>
+<TR class='cfeature'><TD class= 'colName'>2.0mm</TD><TD class= 'colLevel'>G-Text 2 0mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>1[0]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>2</TD><TD class= 'colScale'>2</TD><TD class= 'colTextLineSpacing'>1</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>2.5mm (ft=27)</TD><TD class= 'colLevel'>G-Text 2 5mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>1[0]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>2.5[2.0-2.5]</TD><TD class= 'colScale'>2.5[2.0-2.5]</TD><TD class= 'colTextLineSpacing'>1.25</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>2.5mm (ft=28)</TD><TD class= 'colLevel'>G-Text 2 5mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>1[0]</TD><TD class= 'colTextFont'>ISOEQ</TD><TD class= 'colScale'>2.5[2.0-2.5]</TD><TD class= 'colScale'>2.5[2.0-2.5]</TD><TD class= 'colTextLineSpacing'>1.25</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>3.5mm (ft=27)</TD><TD class= 'colLevel'>G-Text 3 5mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[4]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>2[0-1]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>3.5</TD><TD class= 'colScale'>3.5</TD><TD class= 'colTextLineSpacing'>1.75</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>3.5mm (ft=28)</TD><TD class= 'colLevel'>G-Text 3 5mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[4]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>2[0-1]</TD><TD class= 'colTextFont'>ISOEQ</TD><TD class= 'colScale'>3.5</TD><TD class= 'colScale'>3.5</TD><TD class= 'colTextLineSpacing'>1.75</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>5.0mm</TD><TD class= 'colLevel'>G-Text 5 0mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[3]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>3[0-2]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>5</TD><TD class= 'colScale'>5</TD><TD class= 'colTextLineSpacing'>2.5</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>7.0mm</TD><TD class= 'colLevel'>G-Text 7 0mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[1]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>4[0-3]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>7</TD><TD class= 'colScale'>7</TD><TD class= 'colTextLineSpacing'>3.5</TD><TD class= 'colExtra'></TD></TR>
+<TR class='cfeature'><TD class= 'colName'>10.0mm</TD><TD class= 'colLevel'>G-Text 1 0mm</TD><TD class= 'colTextStyle'></TD><TD class= 'colColour'><TABLE align='right'><TR class='cfeature'><TD>0[2]</TD><TD  width='15' bgcolor='#FFFFFF'><font color='#FFFFFF'>W</font></TD></TABLE></TD><TD class= 'colLineStyle'>0</TD><TD class= 'colWeight'>5[0-4]</TD><TD class= 'colTextFont'>ISO</TD><TD class= 'colScale'>10</TD><TD class= 'colScale'>10</TD><TD class= 'colTextLineSpacing'>5</TD><TD class= 'colExtra'></TD></TR>
+</TABLE>
+</BODY>
+</HTML>

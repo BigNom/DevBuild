@@ -1,0 +1,60 @@
+###############################################################################
+#
+# Report Job File
+# Created automatically by CADconform : Version 6.2.07   Debug MDL
+# on Tue Apr 10 16:49:53 2007
+#
+# Note: Comments are preceded by the hash '#' symbol.
+#
+###############################################################################
+
+#
+# Settings for this Report:
+#
+JobName                 = Demo
+ReportName              = Demo
+FeatureTables           = Mechanical
+FeatureDatasource       = CADconform Demo
+ReportDatasource        = CADconform Demo
+
+ReportAllErrors         = 0
+ReportErrorSummary      = 1
+ReportFeatureSummary    = 0
+ReportWatermarks        = 1
+
+SQLInfoTable            = SELECT * FROM <TABLE>;
+SQLDesignFiles          = SELECT * FROM <TABLE>;
+SQLAllErrors            = SELECT * FROM <TABLE>;
+SQLErrorSummary         = SELECT * FROM <TABLE>;
+SQLFeatureSummary       = SELECT * FROM <TABLE>;
+SQLWatermarks           = SELECT * FROM <TABLE>;
+
+SQLSearchReplace        = SELECT * FROM <TABLE>;
+
+SQLMatchList            = SELECT * FROM <TABLE>;
+
+SQLMatchSummary         = SELECT * FROM <TABLE>;
+
+ScanType                = Cells, Linear, Shapes, Text & Dimensions
+AllowRanges             = 1
+ClipByShape             = 0
+ClipByFence             = 0
+ShapeFeature            = 
+UseRefAttachScale       = 1
+UseRefClipping          = 1
+AllowRefDuplicates      = 0
+ApplyGlobalScale        = 1
+DefaultGlobalScale      = 1.000000
+UpdateWatermarks        = 0
+CertifyRefFiles         = 0
+CertifyGfxSettings      = 0
+DefaultLevelMode        = 1
+
+# Design files to report on:
+#
+
+# DGN = C:\Design\MicroStation\V8\C4M\CMDemo\dgn\Demo.dgn ? <ALL>
+# TextOutputDir = 
+# CSVOutputDir = R:\Testing\CADconform\C4M\Batch Reporting\
+
+# The below data is generated automatically by the C4M installer at runtime

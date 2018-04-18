@@ -1,0 +1,80 @@
+#################################################################
+#                                                               #
+#       CADconform Server Menu Bar                              #
+#                                                               #
+# Syntax:                                                       #
+# MenuName, KeyinCommand                                        #
+#                                                               #
+# A '#' in the first column defines a comment                   #
+# A '-' in the first column defines a menu separator            #
+# A '~' before any character defines a keyboard mnemonic        #
+#                                                               #
+# To launch an MS-DOS batch file, copy the file, into the       #
+# directory pointed to by $(CADCONFORM_SCRIPTS) and issue the   #
+# command as:                                                   #
+#   CADCONFORM RUNSCRIPT SCRIPTNAME.BAT                         #
+#                                                               #
+# Last Modified by Steve Gate, Corporate Montage               #
+# sgate@corporatemontage.com                             	#
+# http://www.corporatemontage.com.au                   		#
+# October 2009							#
+#                                                               #
+#################################################################
+
+#
+# These keyins log us in/out of the CADconform Server database
+#
+Log ~In...,             	CADCONFORM DATABASE CONNECT
+Log ~Out,               	CADCONFORM DATABASE DISCONNECT
+-
+#
+# This command opens the drafting menu
+#
+CADconform Draft,       	CADCONFORM DRAFT
+
+#
+# This command reopens the toolbox
+#
+CADconform Toolbox,     	CADCONFORM DIALOG TOOLBOX
+
+#
+# This command opens the Watermarking Toolbox
+#
+Watermarking Toolbox,  		CADCONFORM DIALOG WATERMARKING
+-
+About CADconform...,    	CADCONFORM ABOUT
+
+#
+# This is an example of the CADCONFORM RUNFROMCACHE command, which allows you to open any document or application.
+# As in this example, we can use workspace config variables. Long path names will automatically be reduced to
+# their MSDOS 8.3 filename equivalents.
+#
+CADconform Help,     		CADCONFORM RUNFROMCACHE "$(_CADCONFORM_DOCS_DIR)\CADconform for MicroStation Help.chm"
+CADconform Reference Guide,     CADCONFORM RUNFROMCACHE "$(_CADCONFORM_DOCS_DIR)\CADconform for MicroStation Reference Guide.pdf"
+
+#
+# This is an example of the CADCONFORM START command, which allows you to opens any document or application.
+#
+Go to Website,          	CADCONFORM START http://www.altivasoft.com
+-
+#
+# This command toggles the CADconform startup method
+#
+Auto-Start,             	CADCONFORM AUTOSTART
+
+#
+# This command toggles whether we want to auto-login to the CADconform database
+# Comment out the next line to prevent users from being able to do this.
+#
+Auto-Login,             	CADCONFORM AUTOLOGIN
+-
+#
+# These commands launch the BHPBIO custom mdl applications
+#
+Ref2Model,			MDL LOAD Ref2Model_v8i
+Ref2Model Batch Process,	VBA RUN R2M_Batch
+FixDataFields,		VBA RUN FIXDATA.RUN
+Batch Data Infill,	VBA RUN BATCH.INFILL
+-
+E~xit CADconform,       	CADCONFORM QUIT
+

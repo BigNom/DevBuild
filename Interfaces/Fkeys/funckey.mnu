@@ -1,0 +1,40 @@
+$FK5.0$ 6/10/2011 9:56:21 AM
+301,help
+302,task menu
+303,inputmanager menu main
+304,inputmanager currenttask
+305,dialog viewsettings popup
+306,dialog namedviews
+308,accudraw lock gridplane
+309,inputmanager cmdbrowse
+30a,dialog toolsettings
+30b,accudraw dialog
+30c,inputmanager home
+1301,inputmanager popupitem Attributes,1
+1302,inputmanager popupitem Attributes,2
+1304,inputmanager popupitem Attributes,4
+1303,inputmanager popupitem Attributes,3
+1305,inputmanager popupitem Attributes,5
+1306,inputmanager popupitem Attributes,6
+1307,inputmanager popupitem Attributes,7
+1308,inputmanager popupitem Attributes,8
+1309,inputmanager popupitem Attributes,9
+130a,inputmanager popupitem Attributes,10
+b01,inputmanager popupitem Primary Tools,1
+b02,inputmanager popupitem Primary Tools,2
+b03,inputmanager popupitem Primary Tools,3
+b04,inputmanager popupitem Primary Tools,4
+b05,inputmanager popupitem Primary Tools,5
+b06,inputmanager popupitem Primary Tools,6
+b07,inputmanager popupitem Primary Tools,7
+b08,inputmanager popupitem Primary Tools,8
+b09,inputmanager popupitem Primary Tools,9
+b0a,inputmanager popupitem Primary Tools,10
+b0b,inputmanager popupitem Primary Tools,11
+b0c,inputmanager popupitem Primary Tools,12
+f01,inputmanager menu main
+f02,inputmanager currenttask
+f03,dialog viewsettings popup
+f04,inputmanager cmdbrowse
+f05,inputmanager menu view control
+f06,dialog namedviews

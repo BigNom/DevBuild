@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Bentley TaskNavigation Configuration File.-->
+<!--Modifying this file may render it invalid.-->
+<State xmlns="TaskNavigationState.01.02">
+    <TaskDialogArray>
+        <TaskDialog>
+            <TaskPath>\</TaskPath>
+            <RootPath />
+            <ActiveGroupPath />
+            <TabRootPath />
+            <AutoOpen>0</AutoOpen>
+        </TaskDialog>
+        <TaskDialog>
+            <TaskPath>\Building Designer Tasks</TaskPath>
+            <RootPath />
+            <ActiveGroupPath />
+            <TabRootPath />
+            <AutoOpen>1</AutoOpen>
+        </TaskDialog>
+    </TaskDialogArray>
+    <TaskTabArray />
+    <LastUsedTaskArray>
+        <LastUsedTask>
+            <RootPath>\</RootPath>
+            <ActiveGroupPath>\Architectural Modeling</ActiveGroupPath>
+        </LastUsedTask>
+        <LastUsedTask>
+            <RootPath>\Building Designer</RootPath>
+            <ActiveGroupPath>\Building Designer\Architectural Design</ActiveGroupPath>
+        </LastUsedTask>
+        <LastUsedTask>
+            <RootPath>\Building Designer Tasks</RootPath>
+            <ActiveGroupPath>\Building Designer Tasks\Structural Design</ActiveGroupPath>
+        </LastUsedTask>
+    </LastUsedTaskArray>
+    <ActiveTaskDialogPath>\Building Designer Tasks</ActiveTaskDialogPath>
+</State>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BentleyWMSFile>
+    <VERSION>1.3</VERSION>
+    <URL>https://iogisimg.apac.ent.bhpbilliton.net/arcgis/services/BaseMaps/Imagery/MapServer/WmsServer?</URL>
+    <REQUEST>
+        <VERSION>1.1.1</VERSION>
+        <SRS>EPSG:4326</SRS>
+        <LAYERS>0</LAYERS>
+        <STYLES />
+        <FORMAT>image/png</FORMAT>
+        <TRANSPARENT>TRUE</TRANSPARENT>
+    </REQUEST>
+    <MAPEXTENT>
+        <BBOX>112.5,-44.093063,153.78025,-8.903313</BBOX>
+    </MAPEXTENT>
+    <LayerList>
+        <LAYER TITLE="Imagery" NAME="0" />
+    </LayerList>
+    <SERVICE>
+        <MAXWIDTH>1024</MAXWIDTH>
+        <MAXHEIGHT>1024</MAXHEIGHT>
+    </SERVICE>
+    <CapabilitiesRequest>
+        <URL>https://iogisimg.apac.ent.bhpbilliton.net/arcgis/services/BaseMaps/Imagery/MapServer/WmsServer</URL>
+    </CapabilitiesRequest>
+    <EditorData>
+        <RangeMethod>Calculated</RangeMethod>
+        <LayerRange>Intersection</LayerRange>
+        <UseModelCoordSysUsefulRange>True</UseModelCoordSysUsefulRange>
+        <UseMapCoordSysUsefulRange>True</UseMapCoordSysUsefulRange>
+        <ExplicitSRS>False</ExplicitSRS>
+    </EditorData>
+</BentleyWMSFile>
